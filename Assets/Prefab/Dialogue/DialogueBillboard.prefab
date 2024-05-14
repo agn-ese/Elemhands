@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 73a1c91213870b64f9575a80168a0617, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d672eaa56be592e4f8e190cb8faba6c2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -142,8 +142,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Nome
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7087e49d0ad74f840adebc4ba61b7937, type: 2}
-  m_sharedMaterial: {fileID: 3845555449513408364, guid: 7087e49d0ad74f840adebc4ba61b7937, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0660cdc16c3d77c408c630976ac5227c, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &2536579575482611294
@@ -226,7 +226,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1716818831755125787
 RectTransform:
   m_ObjectHideFlags: 0
@@ -352,8 +352,8 @@ MonoBehaviour:
   m_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus condimentum
     tempor. Nunc hendrerit urna in nunc semper finibus. Vestibulum dolor dui, ullamcorper.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4e0d69677ca940040b97ba5b5f9291c7, type: 2}
-  m_sharedMaterial: {fileID: -7635786120376950410, guid: 4e0d69677ca940040b97ba5b5f9291c7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0660cdc16c3d77c408c630976ac5227c, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -416,7 +416,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -715.35535, w: -73.22293}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &7602901820896688950
@@ -704,7 +704,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 73a1c91213870b64f9575a80168a0617, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d672eaa56be592e4f8e190cb8faba6c2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

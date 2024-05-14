@@ -16,8 +16,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
 
-    private Queue<string> sentences;
-    private Queue<AudioClip> audios;
+    private Queue<Dialogue> dialogues;
 
     private string stato = "stop";
 
@@ -25,47 +24,26 @@ public class DialogueManager : MonoBehaviour
 
     void Start()
     {
-        sentences = new Queue<string>();
-        audios = new Queue<AudioClip>();
+        dialogues = new Queue<Dialogue>();
     }
 
-    void Update()
-    {
-        // va aggiustato qui
-        /* if (stato == "dialogo" && triggerNext.action.triggered)
-        {
-            DisplayNextSentence();
-        } */
-    }
 
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue(Dialogue[] dialoguesInput)
     {
-        Debug.Log("inizio dialogo con" + dialogue.name);
+        //Debug.Log("inizio dialogo con" + dialogue.name);
 
         stato = "dialogo";
 
         dialogueCanvas.SetActive(true);
 
-        nameText.text = dialogue.name;
+        dialogues.Clear();
 
-        sentences.Clear();
-
-        foreach (string sentence in dialogue.sentences)
+        foreach (Dialogue dial in dialoguesInput)
         {
-            sentences.Enqueue(sentence);
+
+            dialogues.Enqueue(dial);
 
         }
-
-        if (dialogue.audios != null)
-        {
-            foreach (AudioClip audio in dialogue.audios)
-            {
-                audios.Enqueue(audio);
-            }
-
-        }
-
-
 
         DisplayNextSentence();
     }
@@ -74,32 +52,20 @@ public class DialogueManager : MonoBehaviour
     {
         if (stato == "dialogo")
         {
-            if (sentences.Count == 0)
+            if (dialogues.Count == 0)
             {
                 EndDialogue();
                 return;
             }
 
-            AudioClip audio = null;
+            Dialogue dialogue = dialogues.Dequeue();
 
-            string sentence = sentences.Dequeue();
-
-            if (audios != null && audios.Count != 0)
-            {
-                audio = audios.Dequeue();
-            }
-            else
-            {
-                audio = null;
-            }
-
-
-            //Debug.Log(sentence);
             StopAllCoroutines();
-            StartCoroutine(TypeSentence(sentence));
-            if (audio != null)
+            StartCoroutine(TypeSentence(dialogue.sentence, dialogue.name));
+
+            if (dialogue.audio != null)
             {
-                audioSource.clip = audio;
+                audioSource.clip = dialogue.audio;
                 audioSource.Play();
             }
         }
@@ -108,8 +74,9 @@ public class DialogueManager : MonoBehaviour
 
     }
 
-    IEnumerator TypeSentence(string sentence)
+    IEnumerator TypeSentence(string sentence, string name)
     {
+        nameText.text = name;
         dialogueText.text = "";
         foreach (char letter in sentence.ToCharArray())
         {

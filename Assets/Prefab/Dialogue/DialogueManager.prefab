@@ -44,18 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01b93ed8372893f40943e7332d5c6305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerNext:
-    m_UseReference: 0
-    m_Action:
-      m_Name: Trigger Next
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: d753d55f-9581-4d02-aec9-5fda7f190b4e
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: 0}
   dialogueCanvas: {fileID: 0}
   audioSource: {fileID: 0}
   nameText: {fileID: 0}

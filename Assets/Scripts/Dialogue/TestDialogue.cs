@@ -5,7 +5,7 @@ using UnityEngine;
 public class TestDialogue : MonoBehaviour
 {
     public DialogueManager dialogueManager;
-    public Dialogue dialogue;
+    public Dialogue[] dialogue;
 
     public void testDialogue()
     {
