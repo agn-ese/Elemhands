@@ -5,10 +5,9 @@ using static GazeReticle;
 
 public class GazeInteractor : MonoBehaviour
 {
-    // Start is called before the first frame update
+
     [SerializeField] private float _maxDetectionDistance;
     [SerializeField] private float _minDetectionDistance;
-    [SerializeField] private float _activationTime = 0.5f; //time required for activation
     [SerializeField] private LayerMask _layerMask; //layer for raycasting
 
     protected Ray _ray;
@@ -26,11 +25,13 @@ public class GazeInteractor : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        _ray = new Ray(transform.position, _hit.transform.position);
+        _ray = new Ray(transform.position, transform.forward);
+        Debug.DrawRay(transform.position, transform.forward * _hit.distance, Color.red);
         if (Physics.Raycast(_ray, out _hit, _maxDetectionDistance, _layerMask))
         {
+            
             var distance = Vector3.Distance(transform.position, _hit.transform.position);
             if(distance< _minDetectionDistance)
             {
