@@ -803,14 +803,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 607840990}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 933ae96d5faaa984baa041eef30e1c53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   turnSmoothness: 0.1
   head:
-    vrTarget: {fileID: 986506042}
+    vrTarget: {fileID: 1557286195}
     ikTarget: {fileID: 1932007307}
     trackingPositionOffset: {x: 0, y: 0, z: 0}
     trackingRotationOffset: {x: 0, y: 0, z: 0}
@@ -938,7 +938,7 @@ Canvas:
   m_GameObject: {fileID: 709319224}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 2
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -991,7 +991,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!224 &709319228
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1082,6 +1082,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2483171112407822886, guid: f54012181eacade4ea242c65f804720f, type: 3}
       propertyPath: requestEyeTrackingPermissionOnStartup
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483171112407822886, guid: f54012181eacade4ea242c65f804720f, type: 3}
+      propertyPath: requestFaceTrackingPermissionOnStartup
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2483171112407822892, guid: f54012181eacade4ea242c65f804720f, type: 3}
@@ -1178,7 +1182,7 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1468446713}
     - targetCorrespondingSourceObject: {fileID: 863333690809584309, guid: f54012181eacade4ea242c65f804720f, type: 3}
-      insertIndex: -1
+      insertIndex: 0
       addedObject: {fileID: 1544826581}
     - targetCorrespondingSourceObject: {fileID: 4169086326086574538, guid: f54012181eacade4ea242c65f804720f, type: 3}
       insertIndex: -1
