@@ -1536,7 +1536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _activeState: {fileID: 1775582737}
   _target: {fileID: 1929817705}
-  _normalColor: {r: 1, g: 0, b: 0, a: 0}
+  _normalColor: {r: 0.7647059, g: 0.11372549, b: 0, a: 1}
   _activeColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1 &2066994281
 GameObject:

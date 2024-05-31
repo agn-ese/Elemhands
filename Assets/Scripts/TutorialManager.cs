@@ -8,7 +8,9 @@ public class TutorialManager : MonoBehaviour
     private DialogueManager dialogueManager;
     public Dialogue[] dialogoInizio;
     public Dialogue[] dialogoObbiettivoRaggiunto;
+    public Dialogue[] dialogoCassa;
     public bool obiettivoRaggiunto;
+    public bool cassaAlzata;
 
     private void Start()
     {
@@ -32,4 +34,13 @@ public class TutorialManager : MonoBehaviour
 
     }
 
+    public void DialogoCassaSollevata()
+    {
+        if (cassaAlzata == false)
+        {
+            cassaAlzata = true;
+            dialogueManager.StartDialogue(dialogoCassa);
+        }
+
+    }
 }
