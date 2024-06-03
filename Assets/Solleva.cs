@@ -28,10 +28,9 @@ public class Solleva : MonoBehaviour
     {
         if(state.Active)
         {
-            Debug.Log(isInAir);
             if(!isInAir)
             {
-                transform.SetParent(father, false);
+                transform.SetParent(father);
                 transform.localPosition = newPosition;
                 isInAir = true;
                 rigidbody.useGravity = false;

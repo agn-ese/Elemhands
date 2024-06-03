@@ -1386,6 +1386,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -3942242966779429650, guid: 58b97f41d939c1848865fdab7b04ebf9, type: 3}
+--- !u!1 &805001572 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1122115036565456663, guid: 1699dc0e12c19d24b9756feaab29fcb3, type: 3}
+  m_PrefabInstance: {fileID: 1304950157}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &864794718
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1556,6 +1561,10 @@ MonoBehaviour:
     sentence: Ora, guardando la cassa, fai il gesto che ti viene indicato dall'operatore
       per riuscire a sollevare la cassa stessa in aria!
     audio: {fileID: 0}
+  - name: Pluto
+    sentence: Ora, guardando la cassa, fai il gesto che ti viene indicato dall'operatore
+      per riuscire a sollevare la cassa stessa in aria!
+    audio: {fileID: 0}
   dialogoCassa:
   - name: Elemenia
     sentence: Grande! Ce l'hai fatta!
@@ -1647,6 +1656,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1304950158}
     m_Modifications:
+    - target: {fileID: 1125734649048116097, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
+      propertyPath: _minTimeInState
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 1125734649333177397, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
       propertyPath: _activeStates.Array.size
       value: 2
@@ -1698,6 +1711,14 @@ PrefabInstance:
     - target: {fileID: 1125734649379851867, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1125734649379851868, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
+      propertyPath: _remainActiveWhile
+      value: 
+      objectReference: {fileID: 1061807461}
+    - target: {fileID: 1125734649379851868, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
+      propertyPath: _remainActiveCooldown
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1125734649379851871, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
       propertyPath: m_Name
@@ -1831,6 +1852,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1061807461 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1125734649048116097, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
+  m_PrefabInstance: {fileID: 1056200779}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91629c29fa7084f4bb4cd2da4084251f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1086268395
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2101,8 +2133,8 @@ GameObject:
   - component: {fileID: 1260082425}
   - component: {fileID: 1260082428}
   - component: {fileID: 1260082429}
-  - component: {fileID: 1260082431}
   - component: {fileID: 1260082430}
+  - component: {fileID: 1260082431}
   m_Layer: 3
   m_Name: CassaDaSollevare
   m_TagString: Untagged
@@ -2277,7 +2309,18 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.8040711, y: 0.6804205, z: 0.7415495}
-  m_Center: {x: -0.0060548186, y: 0.004531622, z: 0.0036419483}
+  m_Center: {x: -0.0060548186, y: 0.004531622, z: 0.0036409947}
+--- !u!114 &1260840502 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1125734649048116097, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
+  m_PrefabInstance: {fileID: 1735325179}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91629c29fa7084f4bb4cd2da4084251f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1304950157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2377,7 +2420,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 288313665659238627, guid: 1699dc0e12c19d24b9756feaab29fcb3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1056200780}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1122115036565456663, guid: 1699dc0e12c19d24b9756feaab29fcb3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2083443706}
   m_SourcePrefab: {fileID: 100100000, guid: 1699dc0e12c19d24b9756feaab29fcb3, type: 3}
 --- !u!4 &1304950158 stripped
 Transform:
@@ -2815,6 +2861,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1304950158}
     m_Modifications:
     - target: {fileID: 1125734649048116097, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
+      propertyPath: _minTimeInState
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1125734649048116097, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
       propertyPath: _featureConfigs._values.Array.data[0]._handAxis
       value: 1
       objectReference: {fileID: 0}
@@ -2869,6 +2919,14 @@ PrefabInstance:
     - target: {fileID: 1125734649379851867, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1125734649379851868, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
+      propertyPath: _remainActiveWhile
+      value: 
+      objectReference: {fileID: 1260840502}
+    - target: {fileID: 1125734649379851868, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
+      propertyPath: _remainActiveCooldown
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1125734649379851871, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
       propertyPath: m_Name
@@ -3795,12 +3853,25 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2673905721020145968, guid: 1699dc0e12c19d24b9756feaab29fcb3, type: 3}
   m_PrefabInstance: {fileID: 1304950157}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 805001572}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aebd5da9a8bd22243b407f1927f4965b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2083443706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805001572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96a1da6d9fef71649bc7f63904a71a8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 2083443705}
 --- !u!1 &2115348281
 GameObject:
   m_ObjectHideFlags: 0
