@@ -9,8 +9,10 @@ public class TutorialManager : MonoBehaviour
     public Dialogue[] dialogoInizio;
     public Dialogue[] dialogoObbiettivoRaggiunto;
     public Dialogue[] dialogoCassa;
+    public Dialogue[] dialogoTrasporto;
     public bool obiettivoRaggiunto;
     public bool cassaAlzata;
+    public bool inizioTrasporto;
 
     private void Start()
     {
@@ -42,5 +44,14 @@ public class TutorialManager : MonoBehaviour
             dialogueManager.StartDialogue(dialogoCassa);
         }
 
+    }
+
+    public void DialogoTrasportoCassa()
+    {
+        if(inizioTrasporto == false)
+        {
+            inizioTrasporto = true;
+            dialogueManager.StartDialogue(dialogoTrasporto);
+        }
     }
 }
