@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TutorialTeleport.unity
     guid: a9acd4b1209538049b87100468a05d43
+  - enabled: 1
+    path: Assets/Francesco/Scenes/Scena3.unity
+    guid: 711917f09986790468310df4ca802a56
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 6698a685c29728f439efb89c33fa664a, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 956534f12e5aa264d9f48abad6db4dd3, type: 2}
