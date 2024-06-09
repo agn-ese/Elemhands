@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/TutorialTeleport.unity
     guid: a9acd4b1209538049b87100468a05d43
   - enabled: 1
-    path: Assets/Francesco/Scenes/Scena3.unity
+    path: Assets/Francesco/Scenes/Scena_Attuale.unity
     guid: 711917f09986790468310df4ca802a56
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 6698a685c29728f439efb89c33fa664a, type: 2}
