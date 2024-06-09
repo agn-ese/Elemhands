@@ -15,4 +15,13 @@ public class InsertKey : MonoBehaviour
             sound.Play();
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.transform.CompareTag("Key"))
+        {
+            spline.Play();
+            sound.Play();
+        }
+    }
 }

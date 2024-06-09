@@ -4,6 +4,7 @@ using Oculus.Interaction.Locomotion;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Splines;
 
 public class Solleva : MonoBehaviour
 {
@@ -23,6 +24,9 @@ public class Solleva : MonoBehaviour
     [SerializeField] private Transform target;
     [SerializeField] private TeleportInteractable[] teleports;
     [SerializeField] private ReticleDataTeleport[] reticles;
+    [SerializeField] private SplineAnimate spline;
+
+    [SerializeField] private AudioSource sound;
 
     private void Awake()
     {
@@ -76,6 +80,9 @@ public class Solleva : MonoBehaviour
                     {
                         reticle.ReticleMode = ReticleDataTeleport.TeleportReticleMode.ValidTarget;
                     }
+                    spline.Play();
+                    sound.Play();
+                    
                 } else
                 {
                     rigidbody.useGravity = true;
