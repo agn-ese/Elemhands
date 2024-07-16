@@ -14098,6 +14098,8 @@ MonoBehaviour:
   reticles:
   - {fileID: 1260082432}
   - {fileID: 1917759686}
+  spline: {fileID: 0}
+  sound: {fileID: 0}
 --- !u!54 &1260082430
 Rigidbody:
   m_ObjectHideFlags: 0
