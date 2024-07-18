@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [System.Serializable]
 public class Dialogue
@@ -11,5 +12,7 @@ public class Dialogue
     public string sentence;
 
     public AudioClip audio;
+
+    public UnityEvent onDialogueStart;
 
 }

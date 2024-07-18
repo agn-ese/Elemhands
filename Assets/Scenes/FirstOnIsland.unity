@@ -1350,6 +1350,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 743128652}
   m_CullTransparentMesh: 1
+--- !u!1001 &757912727
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2138732227212050029, guid: a9200736740958f4ea9bfece2d09a17f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2138732227212050029, guid: a9200736740958f4ea9bfece2d09a17f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2138732227212050029, guid: a9200736740958f4ea9bfece2d09a17f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2138732227212050029, guid: a9200736740958f4ea9bfece2d09a17f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2138732227212050029, guid: a9200736740958f4ea9bfece2d09a17f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2138732227212050029, guid: a9200736740958f4ea9bfece2d09a17f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2138732227212050029, guid: a9200736740958f4ea9bfece2d09a17f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2138732227212050029, guid: a9200736740958f4ea9bfece2d09a17f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2138732227212050029, guid: a9200736740958f4ea9bfece2d09a17f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2138732227212050029, guid: a9200736740958f4ea9bfece2d09a17f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8959817216575064070, guid: a9200736740958f4ea9bfece2d09a17f, type: 3}
+      propertyPath: m_Name
+      value: RightGhostHand
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125625718526768031, guid: a9200736740958f4ea9bfece2d09a17f, type: 3}
+      propertyPath: objectToFollow
+      value: 
+      objectReference: {fileID: 1892406355}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a9200736740958f4ea9bfece2d09a17f, type: 3}
 --- !u!1001 &798150574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1450,6 +1511,11 @@ MeshCollider:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1122115036565456663, guid: 1699dc0e12c19d24b9756feaab29fcb3, type: 3}
   m_PrefabInstance: {fileID: 1304950157}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &834162626 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2098455404443437695, guid: 0eb1142839dbe1041b1ed4d364188239, type: 3}
+  m_PrefabInstance: {fileID: 1712167238}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &858804845
 PrefabInstance:
@@ -1758,50 +1824,154 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogoInizio:
-  - name: Pippo
-    sentence: "Ciao, ti insegner\xF2 a muoverti in questo ambiente."
+  - name: Pluto
+    sentence: Ciao! Per ascoltare le mie parole fai questo gesto
     audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 834162626}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+  - name: Pippo
+    sentence: "Adesso ti insegner\xF2 a muoverti in questo ambiente."
+    audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 834162626}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - name: Pluto
     sentence: Con il palmo ruotato verso l'alto, chiudi il mignolo, l'anulare e il
       medio verso il palmo.
     audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
   - name: Pippo
     sentence: Punta con l'indice per decidere dove andare e, una volta scelto e comparso
       il puntatore circolare, pizzica pollice e indice per teletrasportarti.
     audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 834162626}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1712167239}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: LeftTeleport
+            m_BoolArgument: 0
+          m_CallState: 2
   - name: Pluto
     sentence: Prova a raggiungere la zona evidenziata in blu.
     audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 834162626}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   dialogoObbiettivoRaggiunto:
   - name: Pluto
     sentence: Bravissimo, adesso sai muoverti!
     audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
   - name: Pippo
     sentence: "Ora proviamo una cosa pi\xF9 difficile"
     audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
   - name: Pluto
     sentence: "Se guardi bene, vicino all'obiettivo, c'\xE8 una cassa"
     audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
   - name: Pippo
     sentence: "Vai verso la cassa e, quando la guarderai, comparir\xE0 un mirino"
     audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
   - name: Pluto
     sentence: Ora, guardando la cassa, fai il gesto che ti viene indicato dall'operatore
       per riuscire a sollevare la cassa stessa in aria!
     audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
   - name: Pluto
     sentence: Ora, guardando la cassa, fai il gesto che ti viene indicato dall'operatore
       per riuscire a sollevare la cassa stessa in aria!
     audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
   dialogoCassa:
   - name: Elemenia
     sentence: Grande! Ce l'hai fatta!
     audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
   - name: Elemenia
     sentence: "Ora, come l'hai sollevata, ripeti il gesto per metterla gi\xF9!"
     audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
+  dialogoTrasporto: []
   obiettivoRaggiunto: 0
   cassaAlzata: 0
+  inizioTrasporto: 0
 --- !u!114 &874885497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2549,7 +2719,14 @@ MonoBehaviour:
   _activeState: {fileID: 2083443705}
   father: {fileID: 1002401081}
   isInAir: 0
+  waitTime: 0
+  time: 3
   manager: {fileID: 874885496}
+  target: {fileID: 0}
+  teleports: []
+  reticles: []
+  spline: {fileID: 0}
+  sound: {fileID: 0}
 --- !u!54 &1260082430
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3200,6 +3377,72 @@ MonoBehaviour:
   _targetPoint: {fileID: 0}
   _faceTargetDirection: 0
   _eyeLevel: 0
+--- !u!1001 &1712167238
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 608726128925385325, guid: 0eb1142839dbe1041b1ed4d364188239, type: 3}
+      propertyPath: objectToFollow
+      value: 
+      objectReference: {fileID: 1892406355}
+    - target: {fileID: 2098455404443437695, guid: 0eb1142839dbe1041b1ed4d364188239, type: 3}
+      propertyPath: m_Name
+      value: LeftGhostHand
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937587237269164893, guid: 0eb1142839dbe1041b1ed4d364188239, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937587237269164893, guid: 0eb1142839dbe1041b1ed4d364188239, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937587237269164893, guid: 0eb1142839dbe1041b1ed4d364188239, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.784
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937587237269164893, guid: 0eb1142839dbe1041b1ed4d364188239, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937587237269164893, guid: 0eb1142839dbe1041b1ed4d364188239, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937587237269164893, guid: 0eb1142839dbe1041b1ed4d364188239, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937587237269164893, guid: 0eb1142839dbe1041b1ed4d364188239, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937587237269164893, guid: 0eb1142839dbe1041b1ed4d364188239, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937587237269164893, guid: 0eb1142839dbe1041b1ed4d364188239, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937587237269164893, guid: 0eb1142839dbe1041b1ed4d364188239, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0eb1142839dbe1041b1ed4d364188239, type: 3}
+--- !u!95 &1712167239 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7480842414046424701, guid: 0eb1142839dbe1041b1ed4d364188239, type: 3}
+  m_PrefabInstance: {fileID: 1712167238}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1735325179
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3996,6 +4239,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d85a4b040e81eb74a995f5a6fea74fd1, type: 3}
+--- !u!4 &1892406355 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3059334028515355174, guid: 1699dc0e12c19d24b9756feaab29fcb3, type: 3}
+  m_PrefabInstance: {fileID: 1304950157}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1900668090
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4561,3 +4809,5 @@ SceneRoots:
   - {fileID: 1361330227}
   - {fileID: 374235020}
   - {fileID: 333972156}
+  - {fileID: 1712167238}
+  - {fileID: 757912727}

@@ -68,6 +68,11 @@ public class DialogueManager : MonoBehaviour
                 audioSource.clip = dialogue.audio;
                 audioSource.Play();
             }
+
+            if (dialogue.onDialogueStart != null)
+            {
+                dialogue.onDialogueStart.Invoke();
+            }
         }
 
 

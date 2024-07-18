@@ -27,6 +27,8 @@ public class FacePlayer : MonoBehaviour
         var lookAtPos = new Vector3(camera.transform.position.x, camera.transform.position.y, camera.transform.position.z);
         transform.LookAt(lookAtPos);
         transform.Rotate(0, 180, 0);
+
+
     }
 }
 
