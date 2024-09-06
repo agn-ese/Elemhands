@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: f6550350a7c30a1458e64f873b35b3bc
+guid: 6f6aa860a58d26041b4b11edd9920bfe
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: ArmsTex
-    second: {fileID: 2100000, guid: c6a7ea06a36e2cd4ea246b2d05436b88, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
