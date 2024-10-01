@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "com.meta.xr.sdk.all": "64.0.0",
+    "com.meta.xr.sdk.avatars": "24.0.1",
+    "com.meta.xr.sdk.avatars.sample.assets": "24.0.0",
     "com.meta.xr.sdk.interaction.ovr.samples": "64.0.0",
     "com.unity.animation.rigging": "1.2.1",
     "com.unity.collab-proxy": "2.1.0",
@@ -10,7 +12,6 @@
     "com.unity.splines": "2.4.0",
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.timeline": "1.7.5",
-    "com.unity.ugui": "1.0.0",
     "com.unity.visualscripting": "1.9.1",
     "com.unity.xr.management": "4.4.1",
     "com.unity.xr.oculus": "4.1.2",
