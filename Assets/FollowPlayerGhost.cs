@@ -15,8 +15,7 @@ public class FollowPlayerGhost : MonoBehaviour
         //transform.position = new Vector3(objectToFollow.transform.position.x, yPos, objectToFollow.transform.position.z) + offset;
         transform.rotation = objectToFollow.rotation;
         //transform.position = Camera.main.ScreenToWorldPoint( new Vector3(Screen.width* offset.x, Screen.height*offset.y, offset.z));
-        transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width * (-1 / 4), Screen.height * (-2.5f), 0.5f));
-        //Debug.Log(Screen.width + " " + Screen.height);
+        transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width * (1.13f), Screen.height * (-3.31f), 0.5f));
 
     }
 

@@ -863,6 +863,63 @@ MonoBehaviour:
   _targetPoint: {fileID: 0}
   _faceTargetDirection: 0
   _eyeLevel: 0
+--- !u!1001 &311707841
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8494819785639257668, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8494819785639257668, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 8494819785639257668, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0069999937
+      objectReference: {fileID: 0}
+    - target: {fileID: 8494819785639257668, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8494819785639257668, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8494819785639257668, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8494819785639257668, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8494819785639257668, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8494819785639257668, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8494819785639257668, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585430696410868026, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
+      propertyPath: m_Name
+      value: Player - XR Rig
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
 --- !u!1001 &333972156
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1856,52 +1913,94 @@ MonoBehaviour:
   - name: Pippo
     sentence: "Ciao, ti insegner\xF2 a muoverti in questo ambiente."
     audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
   - name: Pluto
     sentence: Con il palmo ruotato verso l'alto, chiudi il mignolo, l'anulare e il
       medio verso il palmo.
     audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
   - name: Pippo
     sentence: Punta con l'indice per decidere dove andare e, una volta scelto e comparso
       il puntatore circolare, pizzica pollice e indice per teletrasportarti.
     audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
   - name: Pluto
     sentence: Prova a raggiungere la zona evidenziata in blu.
     audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
   dialogoObbiettivoRaggiunto:
   - name: Pluto
     sentence: Bravissimo, adesso sai muoverti!
     audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
   - name: Pippo
     sentence: "Ora proviamo una cosa pi\xF9 difficile"
     audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
   - name: Pluto
     sentence: "Se guardi bene, vicino all'obiettivo, c'\xE8 una cassa"
     audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
   - name: Pippo
     sentence: "Vai verso la cassa e, quando la guarderai, comparir\xE0 un mirino"
     audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
   - name: Pluto
     sentence: Ora, guardando la cassa, fai il gesto che ti viene indicato dall'operatore
       per riuscire a sollevare la cassa stessa in aria!
     audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
   dialogoCassa:
   - name: Elemenia
     sentence: Grande! Ce l'hai fatta!
     audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
   - name: Elemenia
     sentence: "Ora, come l'hai sollevata, ripeti il gesto per metterla gi\xF9!"
     audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
   dialogoTrasporto:
   - name: Elemenia
     sentence: Benissimo!
     audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
   - name: Elemenia
     sentence: Adesso, avremmo bisogno del tuo aiuto per recuperare quella chiave
       sullo scoglio.. ma non riusciamo a prenderla!!
     audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
   - name: Elemenia
     sentence: Riusciresti a capire come darci una mano?
     audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
   obiettivoRaggiunto: 0
   cassaAlzata: 0
   inizioTrasporto: 0
@@ -7323,3 +7422,4 @@ SceneRoots:
   - {fileID: 1974089771}
   - {fileID: 117669949}
   - {fileID: 818361507}
+  - {fileID: 311707841}
