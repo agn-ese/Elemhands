@@ -8,9 +8,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/TutorialTeleport.unity
     guid: a9acd4b1209538049b87100468a05d43
-  - enabled: 1
+  - enabled: 0
     path: Assets/Francesco/Scenes/Scena_Attuale.unity
-    guid: 711917f09986790468310df4ca802a56
+    guid: 63c813109e7a4214c8e6bcb95ea1ba79
+  - enabled: 1
+    path: Assets/Samples/Meta XR Interaction SDK OVR Samples/64.0.0/Feature Scenes/DebugGesture.unity
+    guid: 577706ac129bf594196dbdc4d948c6e6
+  - enabled: 1
+    path: Assets/Samples/Meta XR Interaction SDK OVR Samples/64.0.0/Feature Scenes/DebugPose.unity
+    guid: 0c21dff7998be3b48bdbf4d868aa7710
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 6698a685c29728f439efb89c33fa664a, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 956534f12e5aa264d9f48abad6db4dd3, type: 2}
