@@ -9,7 +9,7 @@ using UnityEngine.Splines;
 public class PotereTerra : MonoBehaviour
 {
     [Tooltip("The IActiveState to debug.")]
-    [SerializeField, Interface(typeof(IActiveState))]
+    //[SerializeField, Interface(typeof(IActiveState))]
     private UnityEngine.Object _activeState;
     private IActiveState state { get; set; }
 
@@ -22,8 +22,8 @@ public class PotereTerra : MonoBehaviour
 
     private void Awake()
     {
-        state = _activeState as IActiveState;
-        this.AssertField(state, nameof(state));
+        //state = _activeState as IActiveState;
+      //  this.AssertField(state, nameof(state));
     }
 
     public void EvocaOggetto()
