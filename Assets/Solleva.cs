@@ -37,7 +37,7 @@ public class Solleva : MonoBehaviour
 
     private void Update()
     {
-        if(waitTime)
+        if (waitTime)
         {
             time -= Time.deltaTime;
             if (time < 0)
@@ -50,9 +50,9 @@ public class Solleva : MonoBehaviour
 
     public void SollevaOggetto()
     {
-        if(state.Active)
+        if (state.Active)
         {
-            if(!isInAir && !waitTime)
+            if (!isInAir && !waitTime)
             {
                 waitTime = true;
                 transform.SetParent(father);
@@ -61,8 +61,9 @@ public class Solleva : MonoBehaviour
                 rigidbody.useGravity = false;
                 rigidbody.isKinematic = true;
                 manager.DialogoCassaSollevata();
-                
-            } else if(isInAir && !waitTime)
+
+            }
+            else if (isInAir && !waitTime)
             {
                 waitTime = true;
                 transform.SetParent(null);
@@ -82,8 +83,9 @@ public class Solleva : MonoBehaviour
                     }
                     spline.Play();
                     sound.Play();
-                    
-                } else
+
+                }
+                else
                 {
                     rigidbody.useGravity = true;
                     rigidbody.isKinematic = false;
