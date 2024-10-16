@@ -16,10 +16,6 @@ public class PotereTerra : MonoBehaviour
     // prendo il prefab dell'oggetto da evocare che si chiama "OggettoEvocato"
     [SerializeField] private GameObject oggettoEvocato;
 
-
-    [SerializeField] private Material material;
-    [SerializeField] private float peso = 0.5f;
-
     private void Awake()
     {
         state = _activeState as IActiveState;
@@ -33,12 +29,6 @@ public class PotereTerra : MonoBehaviour
         {
             // creo un nuovo oggetto che posiziono davanti al giocatore
             GameObject oggetto = Instantiate(oggettoEvocato, transform.position + transform.forward * 2, Quaternion.identity);
-            // gli assegno il materiale
-            oggetto.GetComponent<Renderer>().material = material;
-            // gli assegno il peso
-            oggetto.GetComponent<Rigidbody>().mass = peso;
-
-
         }
     }
 }
