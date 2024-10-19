@@ -14,12 +14,6 @@
       },
       "url": "https://packages.unity.com"
     },
-    "com.meta.xr.sdk.acoustics": {
-      "version": "file:C:/Users/virgi/Downloads/meta_xr_audio_sdk_fmod_69.0/FMOD/Unity/MetaXRSDKAcousticsFMOD/package",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {}
-    },
     "com.meta.xr.sdk.all": {
       "version": "64.0.0",
       "depth": 0,
