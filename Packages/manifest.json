@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.meta.xr.sdk.acoustics": "file:C:/Users/virgi/Downloads/meta_xr_audio_sdk_fmod_69.0/FMOD/Unity/MetaXRSDKAcousticsFMOD/package",
     "com.meta.xr.sdk.all": "64.0.0",
     "com.meta.xr.sdk.avatars": "29.7.0",
     "com.meta.xr.sdk.interaction.ovr.samples": "64.0.0",
