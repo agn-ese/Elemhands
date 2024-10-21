@@ -2208,13 +2208,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1125734649048116097, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
-      propertyPath: _minVelocity
-      value: 0
+    - target: {fileID: 1125734648421536958, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
+      propertyPath: _featureConfigs._values.Array.data[0]._handAxis
+      value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 1125734649333177397, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
-      propertyPath: _activeStates.Array.size
-      value: 2
+    - target: {fileID: 1125734649048116097, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
+      propertyPath: _featureConfigs._values.Array.data[0]._handAxis
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1125734649379851866, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
       propertyPath: _hand
@@ -2292,18 +2292,6 @@ PrefabInstance:
       propertyPath: _transformFeatureStateProvider
       value: 
       objectReference: {fileID: 1917225262}
-    - target: {fileID: 4307547069359679904, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
-      propertyPath: _activeStates.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4307547069359679907, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
-      propertyPath: _shapes.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 55734ff6ac9c48443ab37831fdd69d7b, type: 2}
-    - target: {fileID: 6189182445597544039, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
-      propertyPath: _transformFeatureConfigs._values.Array.data[2]._state
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 7405656233379961561, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
       propertyPath: _fingerFeatureStateProvider
       value: 
