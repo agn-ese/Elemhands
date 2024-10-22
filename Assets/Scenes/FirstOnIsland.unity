@@ -812,11 +812,6 @@ MonoBehaviour:
   _targetPoint: {fileID: 0}
   _faceTargetDirection: 0
   _eyeLevel: 0
---- !u!4 &267895845 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5612593326514059164, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
-  m_PrefabInstance: {fileID: 76316750}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &319555957
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -829,10 +824,6 @@ PrefabInstance:
       propertyPath: OnGazeStay.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1030472832}
-    - target: {fileID: 3913472799900042078, guid: e15fff769343854429515c10d3562a00, type: 3}
-      propertyPath: _activeState
-      value: 
-      objectReference: {fileID: 944048213}
     - target: {fileID: 5215924841272046256, guid: e15fff769343854429515c10d3562a00, type: 3}
       propertyPath: m_Name
       value: ErbaSpawn
@@ -2287,17 +2278,6 @@ Transform:
   - {fileID: 2128213819}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &944048213 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7604247801760960508, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
-  m_PrefabInstance: {fileID: 76316750}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aebd5da9a8bd22243b407f1927f4965b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1030472831
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2350,10 +2330,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5306709868919400501, guid: 057ddc1c55918c644ad8c88b46d3b4c8, type: 3}
-      propertyPath: _activeState
-      value: 
-      objectReference: {fileID: 944048213}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2936,8 +2912,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ff3f8b3aa118ba44b86b5ab46837350, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _activeState: {fileID: 944048213}
-  father: {fileID: 267895845}
   isInAir: 0
   waitTime: 0
   time: 3
@@ -4437,10 +4411,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SabbiaSpawn
       objectReference: {fileID: 0}
-    - target: {fileID: 7109833073625048881, guid: 4a55bcf1c4e17d84aae002466ca9a0d0, type: 3}
-      propertyPath: _activeState
-      value: 
-      objectReference: {fileID: 944048213}
     - target: {fileID: 8768082904935731029, guid: 4a55bcf1c4e17d84aae002466ca9a0d0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.573646

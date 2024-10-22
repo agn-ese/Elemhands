@@ -27,8 +27,8 @@ public class PotereTerra : MonoBehaviour
         // se premo il tasto F o se premo il tasto B del controller meta quest
         if (/* state.Active || */ Input.GetKeyDown(KeyCode.F) || OVRInput.GetDown(OVRInput.Button.Two))
         {
-            // creo un nuovo oggetto che posiziono davanti al giocatore
-            GameObject oggetto = Instantiate(oggettoEvocato, transform.position + transform.forward * 2, Quaternion.identity);
+            // creo un nuovo oggetto che posiziono davanti al giocatore con una rotazione su x di -90 gradi
+            GameObject oggetto = Instantiate(oggettoEvocato, transform.position + transform.forward * 2, Quaternion.Euler(-90, 0, 0));
         }
     }
 }

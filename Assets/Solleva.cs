@@ -3,17 +3,15 @@ using Oculus.Interaction.DistanceReticles;
 using Oculus.Interaction.Locomotion;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Splines;
 
 public class Solleva : MonoBehaviour
 {
-    [Tooltip("The IActiveState to debug.")]
-    [SerializeField, Interface(typeof(IActiveState))]
-    private UnityEngine.Object _activeState;
     private IActiveState state { get; set; }
 
-    public Transform father;
+    private Transform father;
     Vector3 newPosition = new(0, 0, 6);
     [SerializeField] private bool isInAir = false;
     [SerializeField] private bool waitTime = false;
@@ -31,8 +29,25 @@ public class Solleva : MonoBehaviour
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody>();
-        state = _activeState as IActiveState;
-        this.AssertField(state, nameof(state));
+        /* state = _activeState as IActiveState;
+        this.AssertField(state, nameof(state)); */
+    }
+
+    private void Start()
+    {
+        father = GameObject.Find("GazeInteractor").transform;
+        if (father == null)
+        {
+            Debug.LogError("GazeInteractor not found");
+        }
+
+        state = GameObject.Find("Air - Right to Left").GetComponent<IActiveState>();
+
+        if (state == null)
+        {
+            Debug.LogError("ActiveState not found");
+        }
+
     }
 
     private void Update()
