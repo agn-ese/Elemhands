@@ -782,7 +782,8 @@ MonoBehaviour:
       Value: 0
       HasValue: 0
     Plugins:
-      Value: []
+      Value:
+      - MetaXRAudioFMOD
       HasValue: 1
     StaticPlugins:
       Value: []

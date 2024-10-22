@@ -43,7 +43,7 @@ MonoBehaviour:
   - {fileID: -6628108780882543670}
   StringsBanks:
   - {fileID: 6171291348611079988}
-  cacheTime: 638649501202076511
+  cacheTime: 638651112935681125
   cacheVersion: 131843
 --- !u!114 &2933077493141065463
 MonoBehaviour:
@@ -60,10 +60,10 @@ MonoBehaviour:
   Path: ../../FMOD_PROVA/Build/Desktop/SUONO_PROVA_BANK.bank
   Name: SUONO_PROVA_BANK
   StudioPath: bank:/SUONO_PROVA_BANK
-  lastModified: 638649501202076511
+  lastModified: 638651112935681125
   FileSizes:
   - Name: Desktop
-    Value: 3907648
+    Value: 3907968
   Exists: 1
 --- !u!114 &6171291348611079988
 MonoBehaviour:
