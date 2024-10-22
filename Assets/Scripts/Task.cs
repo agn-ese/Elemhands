@@ -9,7 +9,7 @@ public class Task: MonoBehaviour
     private string taskName;
     private string taskDescription;
     private Status status;
-    private List<Task> tasks = new List<Task>();
+    private List<Task> tasks;
     private Task currentTask; 
 
     public Task(string taskName, string taskDescription)
@@ -44,10 +44,11 @@ public class Task: MonoBehaviour
 
     private void Awake()
     {
-        Task tutorial = new Task("Tutorial", "Impara le meccaniche");
-        Task taskAria = new Task("TaskAria", "Usare gesto aria per arrivare alla chiave");
-        Task taskTerra = new Task("TaskTerra", "Liberare spirito terra");
-        Task finalTask = new Task("FinalTask", "Attivare i geyser con entrambi i gesti");
+        tasks = new List<Task>();
+        Task tutorial = new("Tutorial", "Impara le meccaniche");
+        Task taskAria = new("TaskAria", "Usare gesto aria per arrivare alla chiave");
+        Task taskTerra = new("TaskTerra", "Liberare spirito terra");
+        Task finalTask = new("FinalTask", "Attivare i geyser con entrambi i gesti");
         tasks.Add(tutorial);
         tasks.Add(taskAria);
         tasks.Add(taskTerra);
