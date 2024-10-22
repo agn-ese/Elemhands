@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 2531716519724669742}
   m_Layer: 3
   m_Name: ErbaSpawn
-  m_TagString: Untagged
+  m_TagString: Erba
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

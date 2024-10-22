@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 2506938442554408427}
   m_Layer: 3
   m_Name: RocciaSpawn
-  m_TagString: Untagged
+  m_TagString: Roccia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
