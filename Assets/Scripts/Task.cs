@@ -4,13 +4,11 @@ using UnityEngine;
 
 public enum Status { NotStarted, OnGoing, Completed };
 
-public class Task: MonoBehaviour
+public class Task
 {
     private string taskName;
     private string taskDescription;
     private Status status;
-    private List<Task> tasks;
-    private Task currentTask; 
 
     public Task(string taskName, string taskDescription)
     {
@@ -19,12 +17,14 @@ public class Task: MonoBehaviour
         this.status = Status.NotStarted;
     }
 
+    public string GetName()
+    {
+        return this.taskName;
+    }
+
     public void completeTask()
     {
         this.status = Status.Completed;
-        int index = tasks.FindIndex(t => t.taskName == currentTask.getName());
-        if(index+1 < tasks.Count) 
-            currentTask = tasks[index + 1];
     }
 
     public Status GetStatus()
@@ -39,25 +39,7 @@ public class Task: MonoBehaviour
 
     public string getName()
     {
-        return this.name;
-    }
-
-    private void Start()
-    {
-        currentTask = tasks[0];
-        tasks = new List<Task>();
-        Task tutorial = new("Tutorial", "Impara le meccaniche");
-        Task taskAria = new("TaskAria", "Usare gesto aria per arrivare alla chiave");
-        Task taskTerra = new("TaskTerra", "Liberare spirito terra");
-        Task finalTask = new("FinalTask", "Attivare i geyser con entrambi i gesti");
-        tasks.Add(tutorial);
-        tasks.Add(taskAria);
-        tasks.Add(taskTerra);
-        tasks.Add(finalTask);
-    }
-
-    private void Update()
-    {
-        
+        return this.taskName;
     }
 }
+
