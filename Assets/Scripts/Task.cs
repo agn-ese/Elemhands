@@ -42,8 +42,9 @@ public class Task: MonoBehaviour
         return this.name;
     }
 
-    private void Awake()
+    private void Start()
     {
+        currentTask = tasks[0];
         tasks = new List<Task>();
         Task tutorial = new("Tutorial", "Impara le meccaniche");
         Task taskAria = new("TaskAria", "Usare gesto aria per arrivare alla chiave");
@@ -53,11 +54,6 @@ public class Task: MonoBehaviour
         tasks.Add(taskAria);
         tasks.Add(taskTerra);
         tasks.Add(finalTask);
-    }
-
-    private void Start()
-    {
-        currentTask = tasks[0];
     }
 
     private void Update()
