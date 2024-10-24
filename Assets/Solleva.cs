@@ -84,7 +84,7 @@ public class Solleva : MonoBehaviour
                 waitTime = true;
                 transform.SetParent(null);
                 isInAir = false;
-                if (Vector3.Distance(target.position, transform.position) <= 5f)
+                if (target && Vector3.Distance(target.position, transform.position) <= 5f)
                 {
                     transform.position = target.position;
                     rigidbody.useGravity = false;
