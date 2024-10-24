@@ -75,7 +75,7 @@ public class Solleva : MonoBehaviour
                 isInAir = true;
                 rigidbody.useGravity = false;
                 rigidbody.isKinematic = true;
-                if(manager != null)
+                if (manager != null)
                     manager.DialogoCassaSollevata();
 
             }
@@ -106,8 +106,6 @@ public class Solleva : MonoBehaviour
                     rigidbody.useGravity = true;
                     rigidbody.isKinematic = false;
                 }
-                if(manager != null)
-                    manager.DialogoTrasportoCassa();
             }
         }
     }

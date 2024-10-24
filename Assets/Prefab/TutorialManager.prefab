@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogoInizio:
-  - name: Pluto
+  - name: Elemenia
     sentence: Ciao! Per ascoltare le mie parole fai questo gesto
     audio: {fileID: 0}
     onDialogueStart:
@@ -78,7 +78,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-  - name: Pippo
+  - name: Elemenia
     sentence: "Adesso ti insegner\xF2 a muoverti in questo ambiente."
     audio: {fileID: 0}
     onDialogueStart:
@@ -96,14 +96,14 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - name: Pluto
+  - name: Elemenia
     sentence: Con il palmo ruotato verso l'alto, chiudi il mignolo, l'anulare e il
       medio verso il palmo.
     audio: {fileID: 0}
     onDialogueStart:
       m_PersistentCalls:
         m_Calls: []
-  - name: Pippo
+  - name: Elemenia
     sentence: Punta con l'indice per decidere dove andare e, una volta scelto e comparso
       il puntatore circolare, pizzica pollice e indice per teletrasportarti.
     audio: {fileID: 0}
@@ -134,7 +134,7 @@ MonoBehaviour:
             m_StringArgument: LeftTeleport
             m_BoolArgument: 0
           m_CallState: 2
-  - name: Pluto
+  - name: Elemenia
     sentence: Prova a raggiungere la zona evidenziata in blu.
     audio: {fileID: 0}
     onDialogueStart:
@@ -153,7 +153,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   dialogoObbiettivoRaggiunto:
-  - name: Pluto
+  - name: Elemenia
     sentence: Bravissimo, adesso sai muoverti!
     audio: {fileID: 0}
     onDialogueStart:
@@ -171,13 +171,13 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-  - name: Pippo
+  - name: Elemenia
     sentence: "Ora proviamo una cosa pi\xF9 difficile"
     audio: {fileID: 0}
     onDialogueStart:
       m_PersistentCalls:
         m_Calls: []
-  - name: Pluto
+  - name: Elemenia
     sentence: "Se guardi bene, vicino all'obiettivo, c'\xE8 una cassa"
     audio: {fileID: 0}
     onDialogueStart:
@@ -190,33 +190,204 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - name: Pluto
-    sentence: Ora, guardando la cassa, fai il gesto che ti viene indicato dall'operatore
-      per riuscire a sollevare la cassa stessa in aria!
+    sentence: Ora, guardando la cassa, fai questo gesto per riuscire a sollevare
+      la cassa in aria!
     audio: {fileID: 0}
     onDialogueStart:
       m_PersistentCalls:
-        m_Calls: []
-  - name: Pluto
-    sentence: Ora, guardando la cassa, fai il gesto che ti viene indicato dall'operatore
-      per riuscire a sollevare la cassa stessa in aria!
-    audio: {fileID: 0}
-    onDialogueStart:
-      m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: LeftAirGesture
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: RightAirGesture
+            m_BoolArgument: 1
+          m_CallState: 2
   dialogoCassa:
   - name: Elemenia
     sentence: Grande! Ce l'hai fatta!
     audio: {fileID: 0}
     onDialogueStart:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - name: Elemenia
     sentence: "Ora, come l'hai sollevata, ripeti il gesto per metterla gi\xF9!"
     audio: {fileID: 0}
     onDialogueStart:
       m_PersistentCalls:
         m_Calls: []
-  dialogoTrasporto: []
+  dialogoTutorialTerra:
+  - name: Elemenia
+    sentence: "Adesso \xE8 il momento di imparare un nuovo potere!"
+    audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Elemenia
+    sentence: Con il potere della terra potrai creare delle repliche in base a cosa
+      stai guardando
+    audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Elemenia
+    sentence: Prova a guardare verso quella roccia e fai questo gesto
+    audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: 
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: 
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: 
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: 
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  dialogoTutorialTerraFine:
+  - name: Elemenia
+    sentence: Bravissimo! Adesso con il potere dell'aria puoi spostarlo.
+    audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: Elemenia
+    sentence: Per raggiungere la prossima chiave prova a gestire i geyser come una
+      scala.
+    audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
   obiettivoRaggiunto: 0
   cassaAlzata: 0
-  inizioTrasporto: 0
+  tutorialTerra: 0
+  tutorialTerraFinito: 0

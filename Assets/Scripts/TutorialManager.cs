@@ -9,10 +9,14 @@ public class TutorialManager : MonoBehaviour
     public Dialogue[] dialogoInizio;
     public Dialogue[] dialogoObbiettivoRaggiunto;
     public Dialogue[] dialogoCassa;
-    public Dialogue[] dialogoTrasporto;
+    public Dialogue[] dialogoTutorialTerra;
+    public Dialogue[] dialogoTutorialTerraFine;
+
+
     public bool obiettivoRaggiunto;
     public bool cassaAlzata;
-    public bool inizioTrasporto;
+    public bool tutorialTerra;
+    public bool tutorialTerraFinito;
 
     private void Start()
     {
@@ -46,12 +50,21 @@ public class TutorialManager : MonoBehaviour
 
     }
 
-    public void DialogoTrasportoCassa()
+    public void DialogoTutorialTerra()
     {
-        if(inizioTrasporto == false)
+        if (tutorialTerra == false)
         {
-            inizioTrasporto = true;
-            dialogueManager.StartDialogue(dialogoTrasporto);
+            tutorialTerra = true;
+            dialogueManager.StartDialogue(dialogoTutorialTerra);
+        }
+    }
+
+    public void DialogoTutorialTerraFine()
+    {
+        if (tutorialTerraFinito == false)
+        {
+            tutorialTerraFinito = true;
+            dialogueManager.StartDialogue(dialogoTutorialTerraFine);
         }
     }
 }
