@@ -111,4 +111,14 @@ public class Solleva : MonoBehaviour
             }
         }
     }
+
+    public void RilasciaOggetto()
+    {
+        if (isInAir)
+        {
+            waitTime = true;
+            transform.SetParent(null);
+            isInAir = false;
+        }
+    }
 }

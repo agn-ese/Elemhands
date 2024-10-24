@@ -157,7 +157,7 @@ MonoBehaviour:
   OnGazeStay:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3913472799900042078}
         m_TargetAssemblyTypeName: Solleva, Assembly-CSharp
         m_MethodName: SollevaOggetto
         m_Mode: 1

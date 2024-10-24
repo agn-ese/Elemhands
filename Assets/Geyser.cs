@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Geyser : MonoBehaviour
 {
-    [SerializeField] private float abbassamentoRoccia = 5f;
-    [SerializeField] private float abbassamentoErba = 3f;
-    [SerializeField] private float abbassamentoSabbia = 1f;
+    [SerializeField] private float abbassamentoRoccia = 7f;
+    [SerializeField] private float abbassamentoErba = 5f;
+    [SerializeField] private float abbassamentoSabbia = 2f;
 
     private Transform sopra;
 
@@ -17,6 +17,13 @@ public class Geyser : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        // se ha il componente solleva
+        if (other.GetComponent<Solleva>())
+        {
+            // faccio togliere il sollevamento
+            other.GetComponent<Solleva>().RilasciaOggetto();
+        }
+
         // se entro in collisione con un oggetto col tag "Roccia"
         if (other.gameObject.tag == "Roccia")
         {
