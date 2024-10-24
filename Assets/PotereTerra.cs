@@ -4,31 +4,75 @@ using Oculus.Interaction.Locomotion;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Splines;
 
 public class PotereTerra : MonoBehaviour
 {
-    [Tooltip("The IActiveState to debug.")]
-    [SerializeField, Interface(typeof(IActiveState))]
-    private UnityEngine.Object _activeState;
-    //private IActiveState state { get; set; }
+    private IActiveState state { get; set; }
+    [SerializeField] private bool firstSpawn;
+    [SerializeField] private UnityEvent onFirstSpawn;
 
     // prendo il prefab dell'oggetto da evocare che si chiama "OggettoEvocato"
     [SerializeField] private GameObject oggettoEvocato;
+    [SerializeField] private int massimoOggettiEvocati = 5;
+    private Queue<GameObject> oggettiEvocati = new Queue<GameObject>();
 
-    /*     private void Awake()
+    [SerializeField] private float timeCountdown = 3f;
+    private float time;
+    [SerializeField] private bool waitTime = false;
+
+
+
+    private void Start()
+    {
+        firstSpawn = false;
+
+        state = GameObject.Find("Earth").GetComponent<IActiveState>();
+
+        if (state == null)
         {
-            state = _activeState as IActiveState;
-            this.AssertField(state, nameof(state));
-        } */
+            Debug.LogError("ActiveState not found");
+        }
+
+        time = timeCountdown;
+    }
+
+    private void Update()
+    {
+        if (waitTime)
+        {
+            time -= Time.deltaTime;
+            if (time < 0)
+            {
+                waitTime = false;
+                time = timeCountdown;
+            }
+        }
+    }
 
     public void EvocaOggetto()
     {
         // se premo il tasto F o se premo il tasto B del controller meta quest
-        if (/* state.Active || */ Input.GetKeyDown(KeyCode.F) || OVRInput.GetDown(OVRInput.Button.Two))
+        if (state.Active && !waitTime)
         {
+            waitTime = true;
+            if (!firstSpawn)
+            {
+                firstSpawn = true;
+                onFirstSpawn.Invoke();
+            }
             // creo un nuovo oggetto che posiziono davanti al giocatore con una rotazione su x di -90 gradi
             GameObject oggetto = Instantiate(oggettoEvocato, transform.position + transform.forward * 2, Quaternion.Euler(-90, 0, 0));
+            oggettiEvocati.Enqueue(oggetto);
+
+            // se ci sono più di 5 oggetti evocati, distruggi il primo
+            if (oggettiEvocati.Count > massimoOggettiEvocati)
+            {
+                GameObject oggettoDaDistruggere = oggettiEvocati.Dequeue();
+                Destroy(oggettoDaDistruggere);
+            }
+
         }
     }
 }

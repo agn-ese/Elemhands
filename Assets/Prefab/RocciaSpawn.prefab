@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 683251233878731232}
   - component: {fileID: 2449156000214172727}
   - component: {fileID: 2506938442554408427}
+  - component: {fileID: 3253353090528530257}
   m_Layer: 3
   m_Name: RocciaSpawn
   m_TagString: Roccia
@@ -121,6 +122,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3253353090528530257}
+        m_TargetAssemblyTypeName: PotereTerra, Assembly-CSharp
+        m_MethodName: EvocaOggetto
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnGazeExit:
     m_PersistentCalls:
       m_Calls: []
@@ -148,6 +161,14 @@ MonoBehaviour:
   reticles: []
   spline: {fileID: 0}
   sound: {fileID: 0}
+  firstGrab: 0
+  onFirstGrab:
+    m_PersistentCalls:
+      m_Calls: []
+  firstRelease: 0
+  onFirstRelease:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &7602280778167741247
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -247,3 +268,33 @@ MonoBehaviour:
   _snapPoint: {fileID: 0}
   _materialBlock: {fileID: 0}
   _reticleMode: 1
+--- !u!114 &3253353090528530257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2261545134780420187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d0846c02e071294dbe8dd93e59ce3df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 0}
+  firstSpawn: 0
+  onFirstSpawn:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+        m_MethodName: DialogoTutorialTerraFine
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  oggettoEvocato: {fileID: 2261545134780420187}

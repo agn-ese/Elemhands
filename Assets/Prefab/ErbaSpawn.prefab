@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 8955566764052187995}
   - component: {fileID: 9067989148573761925}
   - component: {fileID: 2531716519724669742}
+  - component: {fileID: 4447237835776435957}
   m_Layer: 3
   m_Name: ErbaSpawn
   m_TagString: Erba
@@ -157,9 +158,21 @@ MonoBehaviour:
   OnGazeStay:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3913472799900042078}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Solleva, Assembly-CSharp
         m_MethodName: SollevaOggetto
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4447237835776435957}
+        m_TargetAssemblyTypeName: PotereTerra, Assembly-CSharp
+        m_MethodName: EvocaOggetto
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -196,6 +209,14 @@ MonoBehaviour:
   reticles: []
   spline: {fileID: 0}
   sound: {fileID: 0}
+  firstGrab: 0
+  onFirstGrab:
+    m_PersistentCalls:
+      m_Calls: []
+  firstRelease: 0
+  onFirstRelease:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &8955566764052187995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,3 +268,21 @@ MonoBehaviour:
   _targetPoint: {fileID: 0}
   _faceTargetDirection: 0
   _eyeLevel: 0
+--- !u!114 &4447237835776435957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5215924841272046256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d0846c02e071294dbe8dd93e59ce3df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 0}
+  firstSpawn: 0
+  onFirstSpawn:
+    m_PersistentCalls:
+      m_Calls: []
+  oggettoEvocato: {fileID: 5215924841272046256}

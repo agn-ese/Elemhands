@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Splines;
 
 public class Solleva : MonoBehaviour
@@ -15,7 +16,8 @@ public class Solleva : MonoBehaviour
     Vector3 newPosition = new(0, 0, 6);
     [SerializeField] private bool isInAir = false;
     [SerializeField] private bool waitTime = false;
-    [SerializeField] private float time = 3f;
+    [SerializeField] private float timeCountdown = 3f;
+    private float time;
     Rigidbody rigidbody;
 
     [SerializeField] private TutorialManager manager;
@@ -25,6 +27,11 @@ public class Solleva : MonoBehaviour
     [SerializeField] private SplineAnimate spline;
 
     [SerializeField] private AudioSource sound;
+
+    [SerializeField] private bool firstGrab;
+    [SerializeField] private UnityEvent onFirstGrab;
+    [SerializeField] private bool firstRelease;
+    [SerializeField] private UnityEvent onFirstRelease;
 
     private void Awake()
     {
@@ -48,6 +55,10 @@ public class Solleva : MonoBehaviour
             Debug.LogError("ActiveState not found");
         }
 
+        firstGrab = false;
+        firstRelease = false;
+        time = timeCountdown;
+
     }
 
     private void Update()
@@ -58,7 +69,7 @@ public class Solleva : MonoBehaviour
             if (time < 0)
             {
                 waitTime = false;
-                time = 5f;
+                time = timeCountdown;
             }
         }
     }
@@ -78,12 +89,26 @@ public class Solleva : MonoBehaviour
                 if (manager != null)
                     manager.DialogoCassaSollevata();
 
+                if (!firstGrab)
+                {
+                    firstGrab = true;
+                    // scaturisci lo unity event on first grab
+                    onFirstGrab.Invoke();
+                }
             }
             else if (isInAir && !waitTime)
             {
                 waitTime = true;
                 transform.SetParent(null);
                 isInAir = false;
+
+                if (!firstRelease)
+                {
+                    firstRelease = true;
+                    // scaturisci lo unity event on first release
+                    onFirstRelease.Invoke();
+                }
+
                 if (target && Vector3.Distance(target.position, transform.position) <= 5f)
                 {
                     transform.position = target.position;
@@ -106,6 +131,8 @@ public class Solleva : MonoBehaviour
                     rigidbody.useGravity = true;
                     rigidbody.isKinematic = false;
                 }
+
+
             }
         }
     }
