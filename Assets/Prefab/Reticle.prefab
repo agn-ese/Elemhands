@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2861061215320435816}
   - component: {fileID: 8135126426815365041}
   - component: {fileID: 3084867041881374247}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,14 +58,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.91166264, b: 0, a: 0.77254903}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5930b4384e96ab549a4561807d01086f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d3fa0bd2b64f9114b864f772e3a6de5b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 903637786959995183}
   - component: {fileID: 802956543071268387}
   - component: {fileID: 7020188757707815648}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -187,13 +187,13 @@ GameObject:
   m_Component:
   - component: {fileID: 8759484760049288106}
   - component: {fileID: 4678490514891949439}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Reticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8759484760049288106
 Transform:
   m_ObjectHideFlags: 0

@@ -17,7 +17,8 @@ public class PortalDelay : MonoBehaviour
 
     public void openPortal()
     {
-        StartCoroutine(delayOpenPortal(5));
+        if(transform.gameObject.activeSelf) 
+            StartCoroutine(delayOpenPortal(5));
     }
 
     IEnumerator delayOpenPortal(int delayTime)
