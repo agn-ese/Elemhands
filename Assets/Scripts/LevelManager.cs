@@ -5,7 +5,7 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     List<Task> tasks;
-    Task currentTask;
+    int currentTaskIndex;
 
 
     private void Start()
@@ -19,20 +19,24 @@ public class LevelManager : MonoBehaviour
         tasks.Add(taskAria);
         tasks.Add(taskTerra);
         tasks.Add(finalTask);
-        currentTask = tasks[0];
+        currentTaskIndex = 0;
     }
 
     private void Update()
     {
+        if (tasks[currentTaskIndex].GetStatus() == Status.Completed)
+            Debug.Log("The end"); 
 
     }
 
-    void getAndStartNextTask()
+    //funzione per finire task in corso e iniziare la prossima
+    public void endLastAndStartNextTask() 
     {
-        int index = tasks.FindIndex(t => t.getName() == currentTask.getName());
-        if (index + 1 < tasks.Count)
-            currentTask = tasks[index + 1];
-        currentTask.StartTask();
+        tasks[currentTaskIndex].completeTask();
+        if (currentTaskIndex + 1 < tasks.Count)
+            currentTaskIndex += 1;
+        tasks[currentTaskIndex].StartTask();
 
     }
+
 }

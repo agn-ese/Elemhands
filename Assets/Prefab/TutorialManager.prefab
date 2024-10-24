@@ -1,0 +1,222 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3068197456789988494
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3556781523804938421}
+  - component: {fileID: 1146100061387185032}
+  - component: {fileID: 3227522219095506495}
+  m_Layer: 0
+  m_Name: TutorialManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3556781523804938421
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3068197456789988494}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.079926, y: 0.461077, z: 3.0872393}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1146100061387185032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3068197456789988494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce09efb4745a6d9418cf42d337076d62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueManager: {fileID: 0}
+  dialogue: []
+--- !u!114 &3227522219095506495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3068197456789988494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 432af5388e798a4449a1c640ab5f5e2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogoInizio:
+  - name: Pluto
+    sentence: Ciao! Per ascoltare le mie parole fai questo gesto
+    audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+  - name: Pippo
+    sentence: "Adesso ti insegner\xF2 a muoverti in questo ambiente."
+    audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: Pluto
+    sentence: Con il palmo ruotato verso l'alto, chiudi il mignolo, l'anulare e il
+      medio verso il palmo.
+    audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Pippo
+    sentence: Punta con l'indice per decidere dove andare e, una volta scelto e comparso
+      il puntatore circolare, pizzica pollice e indice per teletrasportarti.
+    audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: LeftTeleport
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: Pluto
+    sentence: Prova a raggiungere la zona evidenziata in blu.
+    audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  dialogoObbiettivoRaggiunto:
+  - name: Pluto
+    sentence: Bravissimo, adesso sai muoverti!
+    audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+          m_MethodName: set_enabled
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+  - name: Pippo
+    sentence: "Ora proviamo una cosa pi\xF9 difficile"
+    audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Pluto
+    sentence: "Se guardi bene, vicino all'obiettivo, c'\xE8 una cassa"
+    audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Pippo
+    sentence: "Vai verso la cassa e, quando la guarderai, comparir\xE0 un mirino"
+    audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Pluto
+    sentence: Ora, guardando la cassa, fai il gesto che ti viene indicato dall'operatore
+      per riuscire a sollevare la cassa stessa in aria!
+    audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Pluto
+    sentence: Ora, guardando la cassa, fai il gesto che ti viene indicato dall'operatore
+      per riuscire a sollevare la cassa stessa in aria!
+    audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
+  dialogoCassa:
+  - name: Elemenia
+    sentence: Grande! Ce l'hai fatta!
+    audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Elemenia
+    sentence: "Ora, come l'hai sollevata, ripeti il gesto per metterla gi\xF9!"
+    audio: {fileID: 0}
+    onDialogueStart:
+      m_PersistentCalls:
+        m_Calls: []
+  dialogoTrasporto: []
+  obiettivoRaggiunto: 0
+  cassaAlzata: 0
+  inizioTrasporto: 0
