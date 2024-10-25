@@ -457,6 +457,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obiettivo
       objectReference: {fileID: 0}
+    - target: {fileID: 934571155145907930, guid: aafda694b7fbff34bb6daf69fb07d70b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4331719302982566753, guid: aafda694b7fbff34bb6daf69fb07d70b, type: 3}
       propertyPath: onTriggerPlayer.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
