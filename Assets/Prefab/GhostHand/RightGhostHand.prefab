@@ -100,8 +100,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToFollow: {fileID: 0}
-  offset: {x: 0, y: 0, z: -0.5}
-  yPos: 1.7
 --- !u!1001 &6272690018270132918
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -12,11 +12,15 @@ public class TutorialManager : MonoBehaviour
     public Dialogue[] dialogoTutorialTerra;
     public Dialogue[] dialogoTutorialTerraFine;
 
+    public Dialogue[] dialogoFineDemo;
+
 
     public bool obiettivoRaggiunto;
     public bool cassaAlzata;
     public bool tutorialTerra;
     public bool tutorialTerraFinito;
+
+    public bool fineDemo;
 
     private void Start()
     {
@@ -65,6 +69,17 @@ public class TutorialManager : MonoBehaviour
         {
             tutorialTerraFinito = true;
             dialogueManager.StartDialogue(dialogoTutorialTerraFine);
+
+
+        }
+    }
+
+    public void DialogoFineDemo()
+    {
+        if (fineDemo == false)
+        {
+            fineDemo = true;
+            dialogueManager.StartDialogue(dialogoFineDemo);
         }
     }
 }
