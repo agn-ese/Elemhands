@@ -744,7 +744,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8494819785639257668, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.42
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8494819785639257668, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -865,7 +865,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoCassa.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoFineDemo.Array.size
@@ -880,13 +880,20 @@ PrefabInstance:
       value: Elemenia
       objectReference: {fileID: 0}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoFineTutorialAria.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoCassa.Array.data[2].sentence
-      value: Ottimo! Ora utilizza il gesto dell'aria per spostare le scatole in punti
-        strategici per poterti muovere da una piattaforma all'altra
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoFineDemo.Array.data[0].sentence
       value: Complimenti! Hai terminato la demo!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoFineTutorialAria.Array.data[0].name
+      value: Elemenia
       objectReference: {fileID: 0}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoTutorialTerra.Array.data[2].sentence
@@ -900,6 +907,11 @@ PrefabInstance:
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoObbiettivoRaggiunto.Array.data[4].name
       value: Elemenia
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoFineTutorialAria.Array.data[0].sentence
+      value: Ottimo! Ora utilizza il gesto dell'aria per spostare le scatole in punti
+        strategici per poterti muovere da una piattaforma all'altra
       objectReference: {fileID: 0}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoObbiettivoRaggiunto.Array.data[0].sentence
@@ -1583,6 +1595,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RocciaSpawn
       objectReference: {fileID: 0}
+    - target: {fileID: 3253353090528530257, guid: 057ddc1c55918c644ad8c88b46d3b4c8, type: 3}
+      propertyPath: oggettoEvocato
+      value: 
+      objectReference: {fileID: 2261545134780420187, guid: 057ddc1c55918c644ad8c88b46d3b4c8, type: 3}
     - target: {fileID: 3253353090528530257, guid: 057ddc1c55918c644ad8c88b46d3b4c8, type: 3}
       propertyPath: onFirstSpawn.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -2860,6 +2876,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4447237835776435957, guid: e15fff769343854429515c10d3562a00, type: 3}
+      propertyPath: oggettoEvocato
+      value: 
+      objectReference: {fileID: 5215924841272046256, guid: e15fff769343854429515c10d3562a00, type: 3}
+    - target: {fileID: 4447237835776435957, guid: e15fff769343854429515c10d3562a00, type: 3}
       propertyPath: onFirstSpawn.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -3231,7 +3251,7 @@ Animation:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1358031786}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: 0b2d319d8734b1d4fa01fcc32f74de37, type: 2}
   m_Animations:
@@ -3645,6 +3665,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'HandGrabInteractable '
       objectReference: {fileID: 0}
+    - target: {fileID: 2203098682971652429, guid: a7a283c538f526040acd7c29703dad02, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9187867933911550432, guid: a7a283c538f526040acd7c29703dad02, type: 3}
       propertyPath: _rigidbody
       value: 
@@ -3994,6 +4018,57 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.02, y: 0.020000001, z: 0.02}
   m_Center: {x: 0.000000007450581, y: 0.000000029802322, z: -4.656613e-10}
+--- !u!114 &1588121644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878318774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4462db6b836045640a882a2a4e4022f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _allowTeleport: 1
+  _equalDistanceToBlockerOverride: 0
+  _tieBreakerScore: 0
+  _surface: {fileID: 1588121646}
+  _targetPoint: {fileID: 0}
+  _faceTargetDirection: 0
+  _eyeLevel: 0
+--- !u!114 &1588121645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878318774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e617737c781e534eb8e2c4ace64b133, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _snapPoint: {fileID: 0}
+  _materialBlock: {fileID: 0}
+  _reticleMode: 1
+--- !u!114 &1588121646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878318774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2140d2b457bea84881488302059889b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collider: {fileID: 1878318779}
 --- !u!65 &1600374925
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4305,7 +4380,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -4362,27 +4437,6 @@ MonoBehaviour:
   _targetPoint: {fileID: 0}
   _faceTargetDirection: 0
   _eyeLevel: 0
---- !u!65 &1705742464
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1705742456}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.020000003, y: 0.020000007, z: 0.0022765386}
-  m_Center: {x: -2.2739126e-17, y: 8.142109e-17, z: 0.0088617075}
 --- !u!65 &1718474074
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4566,6 +4620,10 @@ PrefabInstance:
     - target: {fileID: 1685265527088220769, guid: 08ec6bf6dfd06324dbf15d07c09e9000, type: 3}
       propertyPath: m_Name
       value: Geyser (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388795137834812289, guid: 08ec6bf6dfd06324dbf15d07c09e9000, type: 3}
+      propertyPath: abbassamentoErba
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4899,6 +4957,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5233112405309087440, guid: da5d09585c357c14f93b3995725640a1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1875796086}
+    - targetCorrespondingSourceObject: {fileID: 5233112405309087440, guid: da5d09585c357c14f93b3995725640a1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1875796093}
     - targetCorrespondingSourceObject: {fileID: -8391222552659086748, guid: da5d09585c357c14f93b3995725640a1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1878318780}
@@ -4988,9 +5049,6 @@ PrefabInstance:
       addedObject: {fileID: 1705742460}
     - targetCorrespondingSourceObject: {fileID: -208595431880416365, guid: da5d09585c357c14f93b3995725640a1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1705742464}
-    - targetCorrespondingSourceObject: {fileID: -208595431880416365, guid: da5d09585c357c14f93b3995725640a1, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1705742463}
     - targetCorrespondingSourceObject: {fileID: -208595431880416365, guid: da5d09585c357c14f93b3995725640a1, type: 3}
       insertIndex: -1
@@ -5007,9 +5065,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -208595431880416365, guid: da5d09585c357c14f93b3995725640a1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2086747825}
-    - targetCorrespondingSourceObject: {fileID: -208595431880416365, guid: da5d09585c357c14f93b3995725640a1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2086747824}
     - targetCorrespondingSourceObject: {fileID: 281855664364225751, guid: da5d09585c357c14f93b3995725640a1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 706038552}
@@ -5103,6 +5158,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2800250516343163423, guid: da5d09585c357c14f93b3995725640a1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1878318779}
+    - targetCorrespondingSourceObject: {fileID: 2800250516343163423, guid: da5d09585c357c14f93b3995725640a1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1588121646}
+    - targetCorrespondingSourceObject: {fileID: 2800250516343163423, guid: da5d09585c357c14f93b3995725640a1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1588121645}
+    - targetCorrespondingSourceObject: {fileID: 2800250516343163423, guid: da5d09585c357c14f93b3995725640a1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1588121644}
     - targetCorrespondingSourceObject: {fileID: -7029948723529949830, guid: da5d09585c357c14f93b3995725640a1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1286216834}
@@ -5413,9 +5477,30 @@ MeshCollider:
   m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2124705421725058983, guid: da5d09585c357c14f93b3995725640a1, type: 3}
+--- !u!65 &1875796093
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875796085}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.02, y: 0.019999996, z: 0.0006666665}
+  m_Center: {x: 0, y: 0, z: -0.00033333324}
 --- !u!1 &1878318702 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5026945896547292358, guid: da5d09585c357c14f93b3995725640a1, type: 3}
@@ -6020,6 +6105,10 @@ PrefabInstance:
       value: SabbiaSpawn
       objectReference: {fileID: 0}
     - target: {fileID: 2556626044541612404, guid: 4a55bcf1c4e17d84aae002466ca9a0d0, type: 3}
+      propertyPath: oggettoEvocato
+      value: 
+      objectReference: {fileID: 291892843001650284, guid: 4a55bcf1c4e17d84aae002466ca9a0d0, type: 3}
+    - target: {fileID: 2556626044541612404, guid: 4a55bcf1c4e17d84aae002466ca9a0d0, type: 3}
       propertyPath: onFirstSpawn.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -6321,27 +6410,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.02, y: 0.020000001, z: 0.02}
   m_Center: {x: 0.000000014901161, y: 0, z: 0}
---- !u!65 &2086747824
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1705742456}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.020000003, y: 0.020000007, z: 0.020000007}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2086747825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6403,7 +6471,19 @@ MonoBehaviour:
   firstGrab: 0
   onFirstGrab:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 552395392}
+        m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+        m_MethodName: DialogoCassaSollevata
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   firstRelease: 0
   onFirstRelease:
     m_PersistentCalls:
