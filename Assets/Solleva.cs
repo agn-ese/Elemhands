@@ -35,7 +35,7 @@ public class Solleva : MonoBehaviour
 
     private void Awake()
     {
-        rigidbody = GetComponent<Rigidbody>();
+        rigidbody = GetComponentInParent<Rigidbody>();
         /* state = _activeState as IActiveState;
         this.AssertField(state, nameof(state)); */
     }

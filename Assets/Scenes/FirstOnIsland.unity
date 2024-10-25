@@ -2546,17 +2546,6 @@ MonoBehaviour:
   _targetPoint: {fileID: 0}
   _faceTargetDirection: 0
   _eyeLevel: 0
---- !u!114 &1260082428 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 922759180102221324, guid: e79e4e585b957bf4aa2ad8138232d4b6, type: 3}
-  m_PrefabInstance: {fileID: 6212703764516655277}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57c3fb2f26c039b46930e4baf38d0891, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1260082432 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7446884141878414995, guid: e79e4e585b957bf4aa2ad8138232d4b6, type: 3}
@@ -4448,7 +4437,7 @@ PrefabInstance:
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoObbiettivoRaggiunto.Array.data[0].onDialogueStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1260082428}
+      objectReference: {fileID: 0}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoObbiettivoRaggiunto.Array.data[0].onDialogueStart.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 

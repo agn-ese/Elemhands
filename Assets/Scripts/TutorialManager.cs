@@ -9,6 +9,7 @@ public class TutorialManager : MonoBehaviour
     public Dialogue[] dialogoInizio;
     public Dialogue[] dialogoObbiettivoRaggiunto;
     public Dialogue[] dialogoCassa;
+    public Dialogue[] dialogoFineTutorialAria;
     public Dialogue[] dialogoTutorialTerra;
     public Dialogue[] dialogoTutorialTerraFine;
 
@@ -17,6 +18,7 @@ public class TutorialManager : MonoBehaviour
 
     public bool obiettivoRaggiunto;
     public bool cassaAlzata;
+    public bool tutorialAriaFinito = false;
     public bool tutorialTerra;
     public bool tutorialTerraFinito;
 
@@ -52,6 +54,15 @@ public class TutorialManager : MonoBehaviour
             dialogueManager.StartDialogue(dialogoCassa);
         }
 
+    }
+
+    public void DialogoTutorialAriaFinito()
+    {
+        if(!tutorialAriaFinito)
+        {
+            tutorialAriaFinito = true;
+            dialogueManager.StartDialogue(dialogoFineTutorialAria);
+        }
     }
 
     public void DialogoTutorialTerra()

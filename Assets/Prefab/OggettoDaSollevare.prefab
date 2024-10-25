@@ -97,13 +97,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isInAir: 0
   waitTime: 0
-  time: 3
+  timeCountdown: 3
   manager: {fileID: 0}
   target: {fileID: 0}
   teleports: []
   reticles: []
   spline: {fileID: 0}
   sound: {fileID: 0}
+  firstGrab: 0
+  onFirstGrab:
+    m_PersistentCalls:
+      m_Calls: []
+  firstRelease: 0
+  onFirstRelease:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &8065736870152156490
 BoxCollider:
   m_ObjectHideFlags: 0
