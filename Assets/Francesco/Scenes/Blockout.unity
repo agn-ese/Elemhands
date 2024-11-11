@@ -360,113 +360,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 934571155145907930, guid: aafda694b7fbff34bb6daf69fb07d70b, type: 3}
   m_PrefabInstance: {fileID: 172423130}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &181488830
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 0c61ad32996549947b413e4abe085b2c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 34.79
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0c61ad32996549947b413e4abe085b2c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.049999714
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0c61ad32996549947b413e4abe085b2c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 15.42
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0c61ad32996549947b413e4abe085b2c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071067
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0c61ad32996549947b413e4abe085b2c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0c61ad32996549947b413e4abe085b2c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0c61ad32996549947b413e4abe085b2c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0c61ad32996549947b413e4abe085b2c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0c61ad32996549947b413e4abe085b2c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0c61ad32996549947b413e4abe085b2c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -3887185075125053422, guid: 0c61ad32996549947b413e4abe085b2c, type: 3}
-      propertyPath: m_DirtyAABB
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -3887185075125053422, guid: 0c61ad32996549947b413e4abe085b2c, type: 3}
-      propertyPath: m_AABB.m_Center.z
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: -3887185075125053422, guid: 0c61ad32996549947b413e4abe085b2c, type: 3}
-      propertyPath: m_AABB.m_Extent.x
-      value: 0.011
-      objectReference: {fileID: 0}
-    - target: {fileID: -3887185075125053422, guid: 0c61ad32996549947b413e4abe085b2c, type: 3}
-      propertyPath: m_AABB.m_Extent.y
-      value: 0.011
-      objectReference: {fileID: 0}
-    - target: {fileID: -3887185075125053422, guid: 0c61ad32996549947b413e4abe085b2c, type: 3}
-      propertyPath: m_AABB.m_Extent.z
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 0c61ad32996549947b413e4abe085b2c, type: 3}
-      propertyPath: m_Name
-      value: Geyser (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0c61ad32996549947b413e4abe085b2c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 181488832}
-  m_SourcePrefab: {fileID: 100100000, guid: 0c61ad32996549947b413e4abe085b2c, type: 3}
---- !u!1 &181488831 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0c61ad32996549947b413e4abe085b2c, type: 3}
-  m_PrefabInstance: {fileID: 181488830}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &181488832
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181488831}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!65 &202761424
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1151,7 +1044,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8494819785639257668, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 23.7
+      value: 27.76
       objectReference: {fileID: 0}
     - target: {fileID: 8494819785639257668, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1159,7 +1052,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8494819785639257668, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 44.5
+      value: 16.16
       objectReference: {fileID: 0}
     - target: {fileID: 8494819785639257668, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1483,7 +1376,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 30aad01bafbeb2845914f78500df4575, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 32.808903
+      value: 35.69
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 30aad01bafbeb2845914f78500df4575, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2208,10 +2101,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5306709868919400501, guid: 057ddc1c55918c644ad8c88b46d3b4c8, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6829720658991596298, guid: 057ddc1c55918c644ad8c88b46d3b4c8, type: 3}
       propertyPath: OnGazeStay.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6829720658991596298, guid: 057ddc1c55918c644ad8c88b46d3b4c8, type: 3}
+      propertyPath: OnGazeStay.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6829720658991596298, guid: 057ddc1c55918c644ad8c88b46d3b4c8, type: 3}
@@ -2219,12 +2116,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 733969501}
     - target: {fileID: 6829720658991596298, guid: 057ddc1c55918c644ad8c88b46d3b4c8, type: 3}
+      propertyPath: OnGazeStay.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 733969507}
+    - target: {fileID: 6829720658991596298, guid: 057ddc1c55918c644ad8c88b46d3b4c8, type: 3}
       propertyPath: OnGazeStay.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: EvocaOggetto
       objectReference: {fileID: 0}
     - target: {fileID: 6829720658991596298, guid: 057ddc1c55918c644ad8c88b46d3b4c8, type: 3}
+      propertyPath: OnGazeStay.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SollevaOggetto
+      objectReference: {fileID: 0}
+    - target: {fileID: 6829720658991596298, guid: 057ddc1c55918c644ad8c88b46d3b4c8, type: 3}
       propertyPath: OnGazeStay.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: PotereTerra, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6829720658991596298, guid: 057ddc1c55918c644ad8c88b46d3b4c8, type: 3}
+      propertyPath: OnGazeStay.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Solleva, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6829720658991596298, guid: 057ddc1c55918c644ad8c88b46d3b4c8, type: 3}
+      propertyPath: OnGazeStay.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2240,6 +2153,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d0846c02e071294dbe8dd93e59ce3df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &733969507 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5306709868919400501, guid: 057ddc1c55918c644ad8c88b46d3b4c8, type: 3}
+  m_PrefabInstance: {fileID: 733969500}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff3f8b3aa118ba44b86b5ab46837350, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!65 &769479223
@@ -3557,23 +3481,39 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2068208674484418611, guid: e15fff769343854429515c10d3562a00, type: 3}
       propertyPath: OnGazeStay.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2068208674484418611, guid: e15fff769343854429515c10d3562a00, type: 3}
       propertyPath: OnGazeStay.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1300108280}
     - target: {fileID: 2068208674484418611, guid: e15fff769343854429515c10d3562a00, type: 3}
+      propertyPath: OnGazeStay.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1424297822}
+    - target: {fileID: 2068208674484418611, guid: e15fff769343854429515c10d3562a00, type: 3}
       propertyPath: OnGazeStay.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: EvocaOggetto
+      objectReference: {fileID: 0}
+    - target: {fileID: 2068208674484418611, guid: e15fff769343854429515c10d3562a00, type: 3}
+      propertyPath: OnGazeStay.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SollevaOggetto
       objectReference: {fileID: 0}
     - target: {fileID: 2068208674484418611, guid: e15fff769343854429515c10d3562a00, type: 3}
       propertyPath: OnGazeStay.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: PotereTerra, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 2068208674484418611, guid: e15fff769343854429515c10d3562a00, type: 3}
+      propertyPath: OnGazeStay.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Solleva, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2068208674484418611, guid: e15fff769343854429515c10d3562a00, type: 3}
+      propertyPath: OnGazeStay.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3913472799900042078, guid: e15fff769343854429515c10d3562a00, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4447237835776435957, guid: e15fff769343854429515c10d3562a00, type: 3}
       propertyPath: oggettoEvocato
@@ -4362,6 +4302,17 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3258579912188167162, guid: 30aad01bafbeb2845914f78500df4575, type: 3}
+--- !u!114 &1424297822 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3913472799900042078, guid: e15fff769343854429515c10d3562a00, type: 3}
+  m_PrefabInstance: {fileID: 1300108279}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff3f8b3aa118ba44b86b5ab46837350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1429694336 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8256591403670261707, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
@@ -7477,19 +7428,35 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 104387687265493341, guid: 4a55bcf1c4e17d84aae002466ca9a0d0, type: 3}
       propertyPath: OnGazeStay.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 104387687265493341, guid: 4a55bcf1c4e17d84aae002466ca9a0d0, type: 3}
       propertyPath: OnGazeStay.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1936073867}
     - target: {fileID: 104387687265493341, guid: 4a55bcf1c4e17d84aae002466ca9a0d0, type: 3}
+      propertyPath: OnGazeStay.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1936073872}
+    - target: {fileID: 104387687265493341, guid: 4a55bcf1c4e17d84aae002466ca9a0d0, type: 3}
       propertyPath: OnGazeStay.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: EvocaOggetto
       objectReference: {fileID: 0}
     - target: {fileID: 104387687265493341, guid: 4a55bcf1c4e17d84aae002466ca9a0d0, type: 3}
+      propertyPath: OnGazeStay.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SollevaOggetto
+      objectReference: {fileID: 0}
+    - target: {fileID: 104387687265493341, guid: 4a55bcf1c4e17d84aae002466ca9a0d0, type: 3}
       propertyPath: OnGazeStay.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: PotereTerra, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 104387687265493341, guid: 4a55bcf1c4e17d84aae002466ca9a0d0, type: 3}
+      propertyPath: OnGazeStay.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Solleva, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 104387687265493341, guid: 4a55bcf1c4e17d84aae002466ca9a0d0, type: 3}
+      propertyPath: OnGazeStay.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 291892843001650284, guid: 4a55bcf1c4e17d84aae002466ca9a0d0, type: 3}
       propertyPath: m_Name
@@ -7529,7 +7496,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7109833073625048881, guid: 4a55bcf1c4e17d84aae002466ca9a0d0, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8768082904935731029, guid: 4a55bcf1c4e17d84aae002466ca9a0d0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7585,6 +7552,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d0846c02e071294dbe8dd93e59ce3df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1936073872 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7109833073625048881, guid: 4a55bcf1c4e17d84aae002466ca9a0d0, type: 3}
+  m_PrefabInstance: {fileID: 1936073866}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff3f8b3aa118ba44b86b5ab46837350, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1937426322
@@ -7753,6 +7731,10 @@ PrefabInstance:
     - target: {fileID: 1685265527088220769, guid: 08ec6bf6dfd06324dbf15d07c09e9000, type: 3}
       propertyPath: m_Name
       value: Geyser (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7745646361653588364, guid: 08ec6bf6dfd06324dbf15d07c09e9000, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8519,5 +8501,4 @@ SceneRoots:
   - {fileID: 1500809070}
   - {fileID: 564435259}
   - {fileID: 1449078892}
-  - {fileID: 181488830}
   - {fileID: 808140183}

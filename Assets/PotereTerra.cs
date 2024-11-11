@@ -15,8 +15,8 @@ public class PotereTerra : MonoBehaviour
 
     // prendo il prefab dell'oggetto da evocare che si chiama "OggettoEvocato"
     [SerializeField] private GameObject oggettoEvocato;
-    [SerializeField] private int massimoOggettiEvocati = 5;
-    private Queue<GameObject> oggettiEvocati = new Queue<GameObject>();
+    //[SerializeField] private int massimoOggettiEvocati = 5;
+    //private Queue<GameObject> oggettiEvocati = new Queue<GameObject>();
 
     [SerializeField] private float timeCountdown = 3f;
     private float time;
@@ -53,7 +53,7 @@ public class PotereTerra : MonoBehaviour
 
     public void EvocaOggetto()
     {
-        // se premo il tasto F o se premo il tasto B del controller meta quest
+
         if (state.Active && !waitTime)
         {
             waitTime = true;
@@ -64,14 +64,14 @@ public class PotereTerra : MonoBehaviour
             }
             // creo un nuovo oggetto che posiziono davanti al giocatore con una rotazione su x di -90 gradi
             GameObject oggetto = Instantiate(oggettoEvocato, transform.position + transform.forward * 2, Quaternion.Euler(-90, 0, 0));
-            oggettiEvocati.Enqueue(oggetto);
+            //oggettiEvocati.Enqueue(oggetto);
 
             // se ci sono più di 5 oggetti evocati, distruggi il primo
-            if (oggettiEvocati.Count > massimoOggettiEvocati)
+            /* if (oggettiEvocati.Count > massimoOggettiEvocati)
             {
                 GameObject oggettoDaDistruggere = oggettiEvocati.Dequeue();
                 Destroy(oggettoDaDistruggere);
-            }
+            } */
 
         }
     }
