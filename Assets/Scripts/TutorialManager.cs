@@ -15,14 +15,23 @@ public class TutorialManager : MonoBehaviour
 
     public Dialogue[] dialogoFineDemo;
 
-
+    [HideInInspector]
     public bool obiettivoRaggiunto;
+    [HideInInspector]
     public bool cassaAlzata;
+    [HideInInspector]
     public bool tutorialAriaFinito = false;
+    [HideInInspector]
     public bool tutorialTerra;
+    [HideInInspector]
     public bool tutorialTerraFinito;
-
+    [HideInInspector]
     public bool fineDemo;
+
+    public bool rockTotem;
+    public bool grassTotem;
+    public bool sandTotem;
+    public GameObject geysers;
 
     private void Start()
     {
@@ -91,6 +100,12 @@ public class TutorialManager : MonoBehaviour
         {
             fineDemo = true;
             dialogueManager.StartDialogue(dialogoFineDemo);
+        }
+    }
+
+    public void CheckTotem() {
+        if (rockTotem && grassTotem && sandTotem) {
+            geysers.SetActive(true);
         }
     }
 }
