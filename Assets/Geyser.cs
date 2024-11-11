@@ -12,6 +12,7 @@ public class Geyser : MonoBehaviour
 
     private Transform sopra;
     private GameObject oggettoDentro; // Variabile per tenere traccia dell'oggetto attualmente all'interno
+    private GameObject oggettoDentroPrecedente;
 
     private void Start()
     {
@@ -21,28 +22,8 @@ public class Geyser : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<Solleva>() && other.gameObject != oggettoDentro)
+        if ((other.gameObject.tag == "Roccia" || other.gameObject.tag == "Erba" || other.gameObject.tag == "Sabbia") && other.gameObject != oggettoDentro)
         {
-            // faccio togliere il sollevamento
-            other.GetComponent<Solleva>().RilasciaOggetto();
-
-            // Se c'è già un oggetto dentro, espellilo
-            if (oggettoDentro != null)
-            {
-                EspelliOggetto(oggettoDentro);
-            }
-
-            // Avvia l'animazione di movimento
-            StartCoroutine(MuoviOggettoAlPuntoSopra(other.gameObject));
-
-            // Avvia la coroutine per aggiornare l'oggetto dentro dopo 2 secondi
-            //StartCoroutine(AggiornaOggettoDentroDopoAttesa(other.gameObject));
-
-        }
-
-        if (other.gameObject.tag == "Roccia" || other.gameObject.tag == "Erba" || other.gameObject.tag == "Sabbia" && other.gameObject != oggettoDentro)
-        {
-            oggettoDentro = other.gameObject;
             float abbassamento = 0f;
 
             switch (other.gameObject.tag)
@@ -59,7 +40,59 @@ public class Geyser : MonoBehaviour
             }
 
             transform.position = new Vector3(transform.position.x, transform.position.y - abbassamento, transform.position.z);
-            StartCoroutine(MuoviOggettoAlPuntoSopra(other.gameObject));
+            Debug.LogError("Mi sono abbassato di " + abbassamento);
+        }
+
+        if (other.GetComponent<Solleva>() && other.gameObject != oggettoDentro)
+        {
+            Debug.LogError("qualcosa è entrato");
+
+            // faccio togliere il sollevamento
+            other.GetComponent<Solleva>().RilasciaOggetto();
+
+            // Se c'è già un oggetto dentro, espellilo
+            if (oggettoDentro != null && oggettoDentro != other.gameObject)
+            {
+                oggettoDentroPrecedente = oggettoDentro;
+                oggettoDentro = other.gameObject;
+
+                EspelliOggetto(oggettoDentroPrecedente);
+            }
+
+            if (oggettoDentro == null)
+            {
+                oggettoDentro = other.gameObject;
+            }
+
+            // Avvia l'animazione di movimento
+            StartCoroutine(MuoviOggettoAlPuntoSopra(oggettoDentro));
+        }
+
+
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        // caso in cui il player rimuove volontariamente l'oggetto
+        if (other.gameObject == oggettoDentro)
+        {
+            Debug.LogError("Oggetto uscito, geyser abbassato");
+            // rialza il geyser in base al tipo di oggetto
+            if (other.tag == "Roccia")
+            {
+                transform.position = new Vector3(transform.position.x, transform.position.y + abbassamentoRoccia, transform.position.z);
+            }
+            else if (other.tag == "Erba")
+            {
+                transform.position = new Vector3(transform.position.x, transform.position.y + abbassamentoErba, transform.position.z);
+            }
+            else if (other.tag == "Sabbia")
+            {
+                transform.position = new Vector3(transform.position.x, transform.position.y + abbassamentoSabbia, transform.position.z);
+            }
+
+            oggettoDentro = null;
+            oggettoDentroPrecedente = null;
         }
     }
 
@@ -88,6 +121,7 @@ public class Geyser : MonoBehaviour
         while (tempoTrascorso < durataAnimazione)
         {
             oggetto.transform.position = Vector3.Lerp(posizioneIniziale, posizioneFinale, tempoTrascorso / durataAnimazione);
+            oggetto.transform.rotation = Quaternion.Lerp(oggetto.transform.rotation, sopra.rotation, tempoTrascorso / durataAnimazione);
             tempoTrascorso += Time.deltaTime;
             yield return null;
         }
@@ -95,14 +129,6 @@ public class Geyser : MonoBehaviour
         oggetto.transform.position = sopra.position;
 
         //oggetto.GetComponent<Collider>().enabled = true;
-    }
-
-    private IEnumerator AggiornaOggettoDentroDopoAttesa(GameObject nuovoOggetto)
-    {
-        yield return new WaitForSeconds(1f);
-
-        // Aggiorna l'oggetto dentro con il nuovo oggetto
-        oggettoDentro = nuovoOggetto;
     }
 
     private void EspelliOggetto(GameObject oggetto)
@@ -128,6 +154,7 @@ public class Geyser : MonoBehaviour
             rb.AddForce(direzioneEspulsione * forzaEspulsione, ForceMode.Impulse);
         }
 
+        Debug.LogError("Oggetto " + oggetto.name + " espulso, geyser abbassato");
         // rialza il geyser in base al tipo di oggetto
         if (oggetto.tag == "Roccia")
         {
