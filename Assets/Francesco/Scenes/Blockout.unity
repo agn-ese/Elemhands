@@ -343,7 +343,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onPlatform: 0
-  roccia: 0
+  rocciaOnPlatform: 0
+  roccia: {fileID: 0}
 --- !u!4 &95740938 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2176385150639591219, guid: a7a283c538f526040acd7c29703dad02, type: 3}
@@ -718,7 +719,7 @@ MonoBehaviour:
   m_Area: 1
   m_OverrideGenerateLinks: 0
   m_GenerateLinks: 0
-  m_IgnoreFromBuild: 0
+  m_IgnoreFromBuild: 1
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
 --- !u!65 &290770027
@@ -736,7 +737,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -755,7 +756,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onPlatform: 0
-  roccia: 0
+  rocciaOnPlatform: 0
+  roccia: {fileID: 0}
 --- !u!1 &292637594 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5148817236446094103, guid: da5d09585c357c14f93b3995725640a1, type: 3}
@@ -825,7 +827,7 @@ Transform:
   m_GameObject: {fileID: 392089188}
   serializedVersion: 2
   m_LocalRotation: {x: -0.3807058, y: 0.5958717, z: 0.59587175, w: 0.3807058}
-  m_LocalPosition: {x: 7.76, y: 9.05, z: -8.33}
+  m_LocalPosition: {x: 7.76, y: 7.9, z: -8.33}
   m_LocalScale: {x: 300, y: 300, z: 59.999996}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1007,7 +1009,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onPlatform: 0
-  roccia: 0
+  rocciaOnPlatform: 0
+  roccia: {fileID: 0}
 --- !u!65 &441669295
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2504,7 +2507,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onPlatform: 0
-  roccia: 0
+  rocciaOnPlatform: 0
+  roccia: {fileID: 0}
 --- !u!65 &836167056
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3318,7 +3322,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onPlatform: 0
-  roccia: 0
+  rocciaOnPlatform: 0
+  roccia: {fileID: 0}
 --- !u!54 &1243679192
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5478,6 +5483,7 @@ MonoBehaviour:
   roccia3: {fileID: 1673065711}
   roccia4: {fileID: 1569942659}
   roccia5: {fileID: 2086747835}
+  lastOnPlatform3: 0
 --- !u!4 &1549804112
 Transform:
   m_ObjectHideFlags: 0
@@ -5646,7 +5652,7 @@ Transform:
   m_GameObject: {fileID: 1650880550}
   serializedVersion: 2
   m_LocalRotation: {x: -0.3807058, y: 0.5958717, z: 0.59587175, w: 0.3807058}
-  m_LocalPosition: {x: -2.82, y: 6.08, z: -6.99}
+  m_LocalPosition: {x: -2.82, y: 4.128, z: -6.99}
   m_LocalScale: {x: 300, y: 300, z: 59.999996}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5828,7 +5834,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onPlatform: 0
-  roccia: 0
+  rocciaOnPlatform: 0
+  roccia: {fileID: 0}
 --- !u!1001 &1659685084
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6091,7 +6098,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onPlatform: 0
-  roccia: 0
+  rocciaOnPlatform: 0
+  roccia: {fileID: 0}
 --- !u!1 &1705742456 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -208595431880416365, guid: da5d09585c357c14f93b3995725640a1, type: 3}
@@ -6256,7 +6264,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onPlatform: 0
-  roccia: 0
+  rocciaOnPlatform: 0
+  roccia: {fileID: 0}
 --- !u!65 &1764317297
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8825,7 +8834,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onPlatform: 0
-  roccia: 0
+  rocciaOnPlatform: 0
+  roccia: {fileID: 0}
 --- !u!114 &2086747841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8839,7 +8849,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onPlatform: 0
-  roccia: 0
+  rocciaOnPlatform: 0
+  roccia: {fileID: 0}
 --- !u!4 &2086747842 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4306643203051859313, guid: da5d09585c357c14f93b3995725640a1, type: 3}

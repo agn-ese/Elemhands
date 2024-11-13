@@ -24,7 +24,7 @@ public class PlayerOnPlatform : MonoBehaviour
         if (other.CompareTag("Player")) {
             onPlatform = true;
         }
-        if (other.CompareTag("Roccia") && transform.name == "Cylinder (1)")
+        if (other.CompareTag("Roccia") )
         {
             roccia = other.GetComponent<Transform>();
         }
@@ -36,7 +36,7 @@ public class PlayerOnPlatform : MonoBehaviour
         {
             onPlatform = false;
         }
-        if (other.CompareTag("Roccia") && transform.name == "Cylinder (1)")
+        if (other.CompareTag("Roccia") )
             roccia = null;
     }
 }
