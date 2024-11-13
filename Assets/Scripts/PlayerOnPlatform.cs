@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerOnPlatform : MonoBehaviour
 {
     public bool onPlatform = false;
-    public bool roccia = false;
+    public bool rocciaOnPlatform = false;
+    public Transform roccia;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,12 +23,11 @@ public class PlayerOnPlatform : MonoBehaviour
     {
         if (other.CompareTag("Player")) {
             onPlatform = true;
-            if (transform.CompareTag("Roccia"))
-                roccia = true;
-            else
-                roccia = false;
         }
-
+        if (other.CompareTag("Roccia") && transform.name == "Cylinder (1)")
+        {
+            roccia = other.GetComponent<Transform>();
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -36,5 +36,7 @@ public class PlayerOnPlatform : MonoBehaviour
         {
             onPlatform = false;
         }
+        if (other.CompareTag("Roccia") && transform.name == "Cylinder (1)")
+            roccia = null;
     }
 }
