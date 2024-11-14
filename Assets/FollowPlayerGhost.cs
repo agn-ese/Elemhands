@@ -5,19 +5,13 @@ using UnityEngine;
 public class FollowPlayerGhost : MonoBehaviour
 {
     [SerializeField] private Transform objectToFollow;
-    //[SerializeField] private Vector3 offset;
-
-    //[SerializeField] private float yPos = 0.0f;
+    [SerializeField] private Vector3 offset;
 
     // Update is called once per frame
     void Update()
     {
-        //transform.position = new Vector3(objectToFollow.transform.position.x, yPos, objectToFollow.transform.position.z) + offset;
         transform.rotation = objectToFollow.rotation;
-        //transform.position = Camera.main.ScreenToWorldPoint( new Vector3(Screen.width* offset.x, Screen.height*offset.y, offset.z));
-        transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width * (1.13f), Screen.height * (-3.31f), 0.5f));
-
+        Vector3 targetPosition = objectToFollow.TransformPoint(offset);
+        transform.position = targetPosition;
     }
-
-
 }
