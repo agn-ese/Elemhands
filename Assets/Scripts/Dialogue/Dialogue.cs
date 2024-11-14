@@ -11,6 +11,8 @@ public class Dialogue
     [TextArea(3, 10)]
     public string sentence;
 
+    public Sprite image;
+
     public AudioClip audio;
 
     public UnityEvent onDialogueStart;

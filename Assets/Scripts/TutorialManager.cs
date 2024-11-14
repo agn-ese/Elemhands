@@ -67,7 +67,7 @@ public class TutorialManager : MonoBehaviour
 
     public void DialogoTutorialAriaFinito()
     {
-        if(!tutorialAriaFinito)
+        if (!tutorialAriaFinito)
         {
             tutorialAriaFinito = true;
             dialogueManager.StartDialogue(dialogoFineTutorialAria);
@@ -103,8 +103,10 @@ public class TutorialManager : MonoBehaviour
         }
     }
 
-    public void CheckTotem() {
-        if (rockTotem && grassTotem && sandTotem) {
+    public void CheckTotem()
+    {
+        if (rockTotem && grassTotem && sandTotem)
+        {
             geysers.SetActive(true);
         }
     }

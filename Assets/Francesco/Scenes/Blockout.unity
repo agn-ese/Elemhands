@@ -1271,6 +1271,14 @@ PrefabInstance:
       value: Elemenia
       objectReference: {fileID: 0}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoInizio.Array.data[0].image
+      value: 
+      objectReference: {fileID: 21300000, guid: 60abd200ed149694d88d0379946cf70a, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoInizio.Array.data[1].image
+      value: 
+      objectReference: {fileID: 21300000, guid: 60abd200ed149694d88d0379946cf70a, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoFineDemo.Array.data[0].name
       value: Elemenia
       objectReference: {fileID: 0}
@@ -5360,10 +5368,6 @@ PrefabInstance:
     - target: {fileID: 7602901820896688950, guid: 8cd71237f250ea546bb9b65f6dcac8be, type: 3}
       propertyPath: m_Name
       value: DialogueBillboard
-      objectReference: {fileID: 0}
-    - target: {fileID: 7602901820896688950, guid: 8cd71237f250ea546bb9b65f6dcac8be, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

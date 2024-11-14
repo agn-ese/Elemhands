@@ -221,12 +221,12 @@ GameObject:
   - component: {fileID: 2024134107487386341}
   - component: {fileID: 1962113411415698240}
   m_Layer: 5
-  m_Name: AButton
+  m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1716818831755125787
 RectTransform:
   m_ObjectHideFlags: 0
@@ -235,15 +235,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2536579575482611294}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
-  m_LocalScale: {x: 0.34, y: 0.34, z: 0.34}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.76, y: 1.76, z: 1.76}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 3555121746573650019}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 437.6, y: -203.6}
+  m_AnchoredPosition: {x: 363, y: 21}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2024134107487386341
@@ -274,7 +274,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3ca452085d30cb74aa4f028022ee9f20, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -282,7 +282,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_UseSpriteMesh: 0
+  m_UseSpriteMesh: 1
   m_PixelsPerUnitMultiplier: 1
 --- !u!1 &7418297962796194958
 GameObject:
@@ -439,7 +439,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3555121746573650019
 RectTransform:
   m_ObjectHideFlags: 0
@@ -452,11 +452,11 @@ RectTransform:
   m_LocalScale: {x: 0.0009999999, y: 0.0009999999, z: 0.0009999999}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 1716818831755125787}
   - {fileID: 9060896594992120605}
   - {fileID: 1317003880269063180}
   - {fileID: 2223573029700016513}
   - {fileID: 1949524032067169097}
-  - {fileID: 1716818831755125787}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 88.77, z: 0}
   m_AnchorMin: {x: 0, y: 0}

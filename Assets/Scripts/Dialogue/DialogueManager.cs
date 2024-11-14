@@ -5,6 +5,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -22,9 +23,13 @@ public class DialogueManager : MonoBehaviour
 
     public UnityEvent onFineDialogo;
 
+    private Image image;
+
     void Start()
     {
         dialogues = new Queue<Dialogue>();
+        // prendo dal figlio Image il componente Image
+        image = dialogueCanvas.transform.Find("Image").GetComponent<Image>();
     }
 
 
@@ -62,6 +67,17 @@ public class DialogueManager : MonoBehaviour
 
             StopAllCoroutines();
             StartCoroutine(TypeSentence(dialogue.sentence, dialogue.name));
+
+            if (dialogue.image != null)
+            {
+                image.enabled = true;
+                image.sprite = dialogue.image;
+            }
+            else
+            {
+                image.enabled = false;
+                image.sprite = null;
+            }
 
             if (dialogue.audio != null)
             {
