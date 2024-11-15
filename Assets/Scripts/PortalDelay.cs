@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PortalDelay : MonoBehaviour
 {
+    [SerializeField]private Platformsmanager platformsManager;
     void Start()
     {
         
@@ -18,6 +19,7 @@ public class PortalDelay : MonoBehaviour
     public void openPortal()
     {
         if(transform.gameObject.activeSelf) 
+            GetComponent<FMODUnity.StudioEventEmitter>().Play();
             StartCoroutine(delayOpenPortal(5));
     }
 
@@ -25,5 +27,6 @@ public class PortalDelay : MonoBehaviour
     {
         yield return new WaitForSeconds(delayTime);
         transform.gameObject.SetActive(false);
+        platformsManager.OpenNewArea();
     }
 }

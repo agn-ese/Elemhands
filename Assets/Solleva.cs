@@ -32,6 +32,7 @@ public class Solleva : MonoBehaviour
     [SerializeField] private UnityEvent onFirstGrab;
     [SerializeField] private bool firstRelease;
     [SerializeField] private UnityEvent onFirstRelease;
+    [SerializeField] private FMODUnity.StudioEventEmitter _eventEmitter;
 
     private void Awake()
     {
@@ -86,6 +87,8 @@ public class Solleva : MonoBehaviour
                 isInAir = true;
                 rigidbody.useGravity = false;
                 rigidbody.isKinematic = true;
+                if(_eventEmitter != null)
+                    _eventEmitter.Play();
                 if (manager != null)
                     manager.DialogoCassaSollevata();
 

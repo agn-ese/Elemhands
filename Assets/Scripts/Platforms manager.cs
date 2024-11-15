@@ -16,23 +16,20 @@ public class Platformsmanager : MonoBehaviour
     [SerializeField] private Transform roccia3;
     [SerializeField] private Transform roccia4;
     [SerializeField] private Transform roccia5;
-    private bool onRoccia1 = false;
-    private bool onRoccia3 = false;
-    private bool onRoccia4 = false;
+    [SerializeField]private bool onRoccia1 = false;
+    [SerializeField]private bool onRoccia3 = false;
+    [SerializeField]private bool onRoccia4 = false;
     private List<Transform> PlatformList;
     private bool lastOnPlatform1 = false;
     [SerializeField]private bool lastOnPlatform3 = false;
     private bool lastOnPlatform4 = false;
 
+    [SerializeField] private Transform secondArea;
 
     // Variables to not consider conditions for every frame
     private float timeToWait = 1f;
     private float time = 0;
     private bool ready = false;
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -184,5 +181,8 @@ public class Platformsmanager : MonoBehaviour
         }
     }
 
-
+    public void OpenNewArea()
+    {
+        secondArea.GetComponent<TeleportInteractable>().enabled = true;
+    }
 }

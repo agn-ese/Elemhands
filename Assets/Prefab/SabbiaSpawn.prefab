@@ -19,6 +19,8 @@ GameObject:
   - component: {fileID: 5205054435790461758}
   - component: {fileID: 2533874396761803333}
   - component: {fileID: 2556626044541612404}
+  - component: {fileID: 7045752496302015302}
+  - component: {fileID: 3551961615162174140}
   m_Layer: 3
   m_Name: SabbiaSpawn
   m_TagString: Sabbia
@@ -153,7 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isInAir: 0
   waitTime: 0
-  time: 3
+  timeCountdown: 3
   manager: {fileID: 0}
   target: {fileID: 0}
   teleports: []
@@ -168,6 +170,7 @@ MonoBehaviour:
   onFirstRelease:
     m_PersistentCalls:
       m_Calls: []
+  _eventEmitter: {fileID: 7045752496302015302}
 --- !u!114 &104387687265493341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,9 +283,73 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d0846c02e071294dbe8dd93e59ce3df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _activeState: {fileID: 0}
   firstSpawn: 0
   onFirstSpawn:
     m_PersistentCalls:
       m_Calls: []
   oggettoEvocato: {fileID: 291892843001650284}
+  timeCountdown: 3
+  waitTime: 0
+  _eventEmitter: {fileID: 3551961615162174140}
+--- !u!114 &7045752496302015302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291892843001650284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1836238404
+      Data2: 1147541508
+      Data3: -525825649
+      Data4: -620341609
+    Path: event:/PotereAria
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &3551961615162174140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291892843001650284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1514452768
+      Data2: 1299741339
+      Data3: 570816412
+      Data4: 1877892218
+    Path: event:/PotereTerra
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20

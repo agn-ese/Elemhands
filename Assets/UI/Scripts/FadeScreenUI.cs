@@ -19,10 +19,12 @@ public class FadeScreenUI : MonoBehaviour
     public void FadeIn()
     {
         Fade(1, 0);
+        this.gameObject.SetActive(false);
     }
 
     public void FadeOut()
     {
+        this.gameObject.SetActive(true);
         Fade(0, 1);
     }
 

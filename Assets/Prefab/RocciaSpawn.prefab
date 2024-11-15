@@ -19,6 +19,8 @@ GameObject:
   - component: {fileID: 2449156000214172727}
   - component: {fileID: 2506938442554408427}
   - component: {fileID: 3253353090528530257}
+  - component: {fileID: 1316570137935021168}
+  - component: {fileID: 1424933452415544992}
   m_Layer: 3
   m_Name: RocciaSpawn
   m_TagString: Roccia
@@ -170,6 +172,7 @@ MonoBehaviour:
   onFirstRelease:
     m_PersistentCalls:
       m_Calls: []
+  _eventEmitter: {fileID: 1316570137935021168}
 --- !u!65 &7602280778167741247
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -298,9 +301,71 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   oggettoEvocato: {fileID: 2261545134780420187}
-  massimoOggettiEvocati: 5
   timeCountdown: 3
   waitTime: 0
+  _eventEmitter: {fileID: 1424933452415544992}
+--- !u!114 &1316570137935021168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2261545134780420187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1836238404
+      Data2: 1147541508
+      Data3: -525825649
+      Data4: -620341609
+    Path: event:/PotereAria
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1424933452415544992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2261545134780420187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1514452768
+      Data2: 1299741339
+      Data3: 570816412
+      Data4: 1877892218
+    Path: event:/PotereTerra
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &3640857557128973895
 PrefabInstance:
   m_ObjectHideFlags: 0
