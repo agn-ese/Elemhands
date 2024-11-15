@@ -19,14 +19,14 @@ public class PortalDelay : MonoBehaviour
     public void openPortal()
     {
         if(transform.gameObject.activeSelf) 
-            GetComponent<FMODUnity.StudioEventEmitter>().Play();
             StartCoroutine(delayOpenPortal(5));
     }
 
     IEnumerator delayOpenPortal(int delayTime)
     {
         yield return new WaitForSeconds(delayTime);
-        transform.gameObject.SetActive(false);
+        GetComponent<FMODUnity.StudioEventEmitter>().Play();
         platformsManager.OpenNewArea();
+        transform.gameObject.SetActive(false);
     }
 }

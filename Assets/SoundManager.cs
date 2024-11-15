@@ -43,9 +43,8 @@ public class SoundManager : MonoBehaviour
         Collider[] hitColliders = Physics.OverlapSphere(_player.position, 0.1f);
         foreach (var hitCollider in hitColliders)
         {
-            Debug.Log("Player is in contact with: " + hitCollider.gameObject.name);
             FMODUnity.StudioEventEmitter component = GameObject.Find(hitCollider.gameObject.name).GetComponent<FMODUnity.StudioEventEmitter>();
-            if(component != null) {
+            if(component != null && !hitCollider.gameObject.CompareTag("Roccia")) {
                 component.Play();
             }
         }
