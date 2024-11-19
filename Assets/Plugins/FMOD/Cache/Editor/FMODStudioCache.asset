@@ -234,7 +234,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Musica.bank
   Name: Musica
   StudioPath: bank:/Musica
-  lastModified: 638674527663786162
+  lastModified: 638676279148718936
   FileSizes: []
   Exists: 1
 --- !u!114 &-4087982311996240493
@@ -330,7 +330,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Suoni.bank
   Name: Suoni
   StudioPath: bank:/Suoni
-  lastModified: 638674527664446173
+  lastModified: 638676279149328932
   FileSizes: []
   Exists: 1
 --- !u!114 &-2456122937423544203
@@ -476,7 +476,7 @@ MonoBehaviour:
   - {fileID: 7594482456497510210}
   StringsBanks:
   - {fileID: 1493270783521177596}
-  cacheTime: 638674527664446173
+  cacheTime: 638676279149328932
   cacheVersion: 131843
 --- !u!114 &80109050177142724
 MonoBehaviour:
@@ -674,7 +674,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638674527663184396
+  lastModified: 638676279148138938
   FileSizes:
   - Name: 
     Value: 2358
@@ -976,7 +976,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638674527663184396
+  lastModified: 638676279148128931
   FileSizes: []
   Exists: 1
 --- !u!114 &8956980523301524696
