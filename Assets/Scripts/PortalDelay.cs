@@ -25,7 +25,7 @@ public class PortalDelay : MonoBehaviour
     IEnumerator delayOpenPortal(int delayTime)
     {
         yield return new WaitForSeconds(delayTime);
-        GetComponent<FMODUnity.StudioEventEmitter>().Play();
+       // GetComponent<FMODUnity.StudioEventEmitter>().Play();
         platformsManager.OpenNewArea();
         transform.gameObject.SetActive(false);
     }
