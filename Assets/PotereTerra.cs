@@ -62,7 +62,7 @@ public class PotereTerra : MonoBehaviour
                 onFirstSpawn.Invoke();
             }
             // creo un nuovo oggetto che posiziono davanti al giocatore con una rotazione su x di -90 gradi
-            GameObject oggetto = Instantiate(oggettoEvocato, transform.position + transform.forward * 2, Quaternion.Euler(-90, 0, 0));
+            GameObject oggetto = Instantiate(oggettoEvocato, transform.position + transform.forward * 2 + Vector3.up * 2, Quaternion.Euler(-90, 0, 0));
             if (_eventEmitter != null)
                 _eventEmitter.Play();
             //oggettiEvocati.Enqueue(oggetto);

@@ -10,9 +10,11 @@ public class TutorialManager : MonoBehaviour
     public Dialogue[] dialogoObbiettivoRaggiunto;
     public Dialogue[] dialogoCassa;
     public Dialogue[] dialogoFineTutorialAria;
+    public Dialogue[] dialogoCheckpoint;
+    public Dialogue[] dialogoIntroduzioneGaia;
     public Dialogue[] dialogoTutorialTerra;
     public Dialogue[] dialogoTutorialTerraFine;
-
+    public Dialogue[] dialogoGeysers;
     public Dialogue[] dialogoFineDemo;
 
     [HideInInspector]
@@ -22,9 +24,15 @@ public class TutorialManager : MonoBehaviour
     [HideInInspector]
     public bool tutorialAriaFinito = false;
     [HideInInspector]
+    public bool checkPoint;
+    [HideInInspector]
+    public bool introduzioneGaia;
+    [HideInInspector]
     public bool tutorialTerra;
     [HideInInspector]
     public bool tutorialTerraFinito;
+    [HideInInspector]
+    public bool geysesAttivati;
     [HideInInspector]
     public bool fineDemo;
 
@@ -74,6 +82,24 @@ public class TutorialManager : MonoBehaviour
         }
     }
 
+    public void DialogoCheckpoint()
+    {
+        if (!checkPoint)
+        {
+            checkPoint = true;
+            dialogueManager.StartDialogue(dialogoCheckpoint);
+        }
+    }
+
+    public void DialogoIntroduzioneGaia()
+    {
+        if (!introduzioneGaia)
+        {
+            introduzioneGaia = true;
+            dialogueManager.StartDialogue(dialogoIntroduzioneGaia);
+        }
+    }
+
     public void DialogoTutorialTerra()
     {
         if (tutorialTerra == false)
@@ -89,8 +115,15 @@ public class TutorialManager : MonoBehaviour
         {
             tutorialTerraFinito = true;
             dialogueManager.StartDialogue(dialogoTutorialTerraFine);
+        }
+    }
 
-
+    public void DialogoGeysers()
+    {
+        if (geysesAttivati == false)
+        {
+            geysesAttivati = true;
+            dialogueManager.StartDialogue(dialogoGeysers);
         }
     }
 
@@ -109,6 +142,7 @@ public class TutorialManager : MonoBehaviour
         {
             geysers.SetActive(true);
             geysers.GetComponent<FMODUnity.StudioEventEmitter>().Play();
+            DialogoGeysers();
         }
     }
 }

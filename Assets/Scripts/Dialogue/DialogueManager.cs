@@ -102,8 +102,8 @@ public class DialogueManager : MonoBehaviour
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
+            dialogueText.text = dialogueText.text.Replace("\r", " ").Replace("\n", " ");
             yield return null;
-
         }
     }
 

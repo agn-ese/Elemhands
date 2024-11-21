@@ -16,13 +16,12 @@ public class Platformsmanager : MonoBehaviour
     [SerializeField] private Transform roccia2;
     [SerializeField] private Transform roccia3;
     [SerializeField] private Transform roccia4;
-    [SerializeField] private Transform roccia5;
     [SerializeField]private bool onRoccia1 = false;
     [SerializeField]private bool onRoccia3 = false;
     [SerializeField]private bool onRoccia4 = false;
     private List<Transform> PlatformList;
     private bool lastOnPlatform1 = false;
-    [SerializeField]private bool lastOnPlatform3 = false;
+    private bool lastOnPlatform3 = false;
     private bool lastOnPlatform4 = false;
 
     [SerializeField] private Transform secondArea;
@@ -35,7 +34,7 @@ public class Platformsmanager : MonoBehaviour
     Transform[] roccias;
     
     public void Start() {
-        roccias = new Transform[] { roccia1, roccia2, roccia3, roccia4, roccia5 };
+        roccias = new Transform[] { roccia1, roccia2, roccia3, roccia4 };
     }
 
     // Update is called once per frame
@@ -55,143 +54,6 @@ public class Platformsmanager : MonoBehaviour
         onRoccia1 = IsAnyRocciaOnPlatform(platform1, roccias); //Check if any Roccia is on platform1
         onRoccia3 = IsAnyRocciaOnPlatform(platform3, roccias); //Check if any Roccia is on platform3
         onRoccia4 = IsAnyRocciaOnPlatform(platform4, roccias); //Check if any Roccia is on platform4
-
-        /* // Check if any Roccia is on platform2
-        if (platform1.GetComponent<PlayerOnPlatform>().roccia == roccia1 && roccia1.GetComponent<PlayerOnPlatform>().onPlatform)
-        {
-            onRoccia1 = true;
-        }
-        else if (platform1.GetComponent<PlayerOnPlatform>().roccia == roccia2 && roccia2.GetComponent<PlayerOnPlatform>().onPlatform)
-        {
-            onRoccia1 = true;
-        }
-        else if (platform1.GetComponent<PlayerOnPlatform>().roccia == roccia3 && roccia3.GetComponent<PlayerOnPlatform>().onPlatform)
-        {
-            onRoccia1 = true;
-        }
-        else if (platform1.GetComponent<PlayerOnPlatform>().roccia == roccia4 && roccia4.GetComponent<PlayerOnPlatform>().onPlatform)
-        {
-            onRoccia1 = true;
-        }
-        else if (platform1.GetComponent<PlayerOnPlatform>().roccia == roccia5 && roccia5.GetComponent<PlayerOnPlatform>().onPlatform)
-        {
-            onRoccia1 = true;
-        }
-        else
-        {
-            onRoccia1 = false;
-        }
-
-        if (platform3.GetComponent<PlayerOnPlatform>().roccia == roccia1 && roccia1.GetComponent<PlayerOnPlatform>().onPlatform)
-        {
-            onRoccia3 = true;
-        }
-        else if (platform3.GetComponent<PlayerOnPlatform>().roccia == roccia2 && roccia2.GetComponent<PlayerOnPlatform>().onPlatform)
-        {
-            onRoccia3 = true;
-        }
-        else if (platform3.GetComponent<PlayerOnPlatform>().roccia == roccia3 && roccia3.GetComponent<PlayerOnPlatform>().onPlatform)
-        {
-            onRoccia3 = true;
-        }
-        else if (platform3.GetComponent<PlayerOnPlatform>().roccia == roccia4 && roccia4.GetComponent<PlayerOnPlatform>().onPlatform)
-        {
-            onRoccia3 = true;
-        }
-        else if (platform3.GetComponent<PlayerOnPlatform>().roccia == roccia5 && roccia5.GetComponent<PlayerOnPlatform>().onPlatform)
-        {
-            onRoccia3 = true;
-        }
-        else
-        {
-            onRoccia3 = false;
-        }
-
-        if (platform4.GetComponent<PlayerOnPlatform>().roccia == roccia1 && roccia1.GetComponent<PlayerOnPlatform>().onPlatform)
-        {
-            onRoccia4 = true;
-        }
-        else if (platform4.GetComponent<PlayerOnPlatform>().roccia == roccia2 && roccia2.GetComponent<PlayerOnPlatform>().onPlatform)
-        {
-            onRoccia4 = true;
-        }
-        else if (platform4.GetComponent<PlayerOnPlatform>().roccia == roccia3 && roccia3.GetComponent<PlayerOnPlatform>().onPlatform)
-        {
-            onRoccia4 = true;
-        }
-        else if (platform4.GetComponent<PlayerOnPlatform>().roccia == roccia4 && roccia4.GetComponent<PlayerOnPlatform>().onPlatform)
-        {
-            onRoccia4 = true;
-        }
-        else if (platform4.GetComponent<PlayerOnPlatform>().roccia == roccia5 && roccia5.GetComponent<PlayerOnPlatform>().onPlatform)
-        {
-            onRoccia4 = true;
-        }
-        else
-        {
-            onRoccia4 = false;
-        } */
-
-        /* if (ready)
-        {
-
-            if (platform1.GetComponent<PlayerOnPlatform>().onPlatform)
-            {
-                lastOnPlatform1 = true;
-            }
-
-            if (lastOnPlatform1 && onRoccia1)
-            {
-                platform2.GetComponent<TeleportInteractable>().enabled = true;
-            }
-
-            if (platform2.GetComponent<PlayerOnPlatform>().onPlatform)
-            {
-                platform3.GetComponent<TeleportInteractable>().enabled = true;
-                lastOnPlatform1 = false;
-                lastOnPlatform3 = false;
-            }
-
-            if (platform3.GetComponent<PlayerOnPlatform>().onPlatform)
-            {
-                lastOnPlatform3 = true;
-                lastOnPlatform4 = false;
-            }
-
-            if (lastOnPlatform3 && onRoccia3)
-            {
-                platform4.GetComponent<TeleportInteractable>().enabled = true;
-            }
-
-
-            if (platform4.GetComponent<PlayerOnPlatform>().onPlatform)
-            {
-                lastOnPlatform3 = false;
-                lastOnPlatform4 = true;
-            }
-
-            if(lastOnPlatform4 && onRoccia4)
-            {
-                platform5.GetComponent<TeleportInteractable>().enabled = true;
-            }
-
-            if (platform4.GetComponent<PlayerOnPlatform>().onPlatform)
-            {
-                lastOnPlatform4 = false;
-            }
-
-            if (!platform5.GetComponent<PlayerOnPlatform>().onPlatform && !platform4.GetComponent<PlayerOnPlatform>().onPlatform && !platform3.GetComponent<PlayerOnPlatform>().onPlatform && !platform2.GetComponent<PlayerOnPlatform>().onPlatform && !platform1.GetComponent<PlayerOnPlatform>().onPlatform
-                &&  !lastOnPlatform1 && !lastOnPlatform4 && !lastOnPlatform3)
-            {
-                platform2.GetComponent<TeleportInteractable>().enabled = false;
-                platform3.GetComponent<TeleportInteractable>().enabled = false;
-                platform4.GetComponent<TeleportInteractable>().enabled = false;
-                platform5.GetComponent <TeleportInteractable>().enabled = false;
-            }
-
-            ready = false;
-            time = 0;
-        } */
 
         if (ready)
         {

@@ -13,7 +13,7 @@ public class Solleva : MonoBehaviour
     private IActiveState state { get; set; }
 
     private Transform father;
-    Vector3 newPosition = new(0, 0, 6);
+    Vector3 newPosition = new(0, 0, 3);
     [SerializeField] private bool isInAir = false;
     [SerializeField] private bool waitTime = false;
     [SerializeField] private float timeCountdown = 3f;

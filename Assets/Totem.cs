@@ -26,6 +26,7 @@ public class Totem : MonoBehaviour
                     break;
                 case "Erba":
                     tutorialManager.grassTotem = true;
+                    tutorialManager.DialogoTutorialTerraFine();
                     GetComponent<FMODUnity.StudioEventEmitter>().Play();
                     tutorialManager.CheckTotem();
                     break;
