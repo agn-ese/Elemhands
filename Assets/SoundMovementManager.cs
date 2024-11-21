@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Oculus.Interaction.Locomotion;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SoundMovementManager : MonoBehaviour
@@ -11,9 +12,7 @@ public class SoundMovementManager : MonoBehaviour
     [SerializeField]
     private Transform _player;
 
-    /*
     [SerializeField] private FMODUnity.StudioEventEmitter[] _eventEmitters;
-    */
 
     [Space(10)]
     [Header("Elementi utili per check di movimento in base al terreno e loading scene")]
@@ -21,7 +20,6 @@ public class SoundMovementManager : MonoBehaviour
     public bool firstOnErba = false;
     [SerializeField] private TutorialManager tutorialManager;
 
-    /*
     private void Start()
     {
         foreach (var emitter in _eventEmitters)
@@ -29,7 +27,6 @@ public class SoundMovementManager : MonoBehaviour
             emitter.Play();
         }
     }
-    */
 
     private void OnEnable()
     {
@@ -53,18 +50,11 @@ public class SoundMovementManager : MonoBehaviour
         foreach (var hitCollider in hitColliders)
         {
             Debug.Log(hitCollider.gameObject.name + " + " + hitCollider.gameObject.tag);
-
-            /*
             FMODUnity.StudioEventEmitter component = GameObject.Find(hitCollider.gameObject.name).GetComponent<FMODUnity.StudioEventEmitter>();
-            if (component != null && hitCollider.gameObject.tag != "Roccia")
-            {
+            if(component != null && hitCollider.gameObject.tag != "Roccia") {
                 component.Play();
             }
-            */
-
-            // Gestione del primo contatto con l'erba
-            if (hitCollider.gameObject.tag == "Erba" && firstOnErba == false)
-            {
+            if(hitCollider.gameObject.tag == "Erba" && firstOnErba == false) {
                 Debug.Log("Primo contatto con l'erba");
                 firstOnErba = true;
                 tutorialManager.DialogoIntroduzioneGaia();

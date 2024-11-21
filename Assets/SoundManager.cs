@@ -12,9 +12,8 @@ public class SoundManager : MonoBehaviour
     [SerializeField]
     private Transform _player;
 
-    //[SerializeField] private FMODUnity.StudioEventEmitter[] _eventEmitters;
+    [SerializeField] private FMODUnity.StudioEventEmitter[] _eventEmitters;
 
-    /*
     private void Start()
     {
         foreach (var emitter in _eventEmitters)
@@ -22,7 +21,6 @@ public class SoundManager : MonoBehaviour
             emitter.Play();
         }
     }
-    */
 
     private void OnEnable()
     {
@@ -43,13 +41,12 @@ public class SoundManager : MonoBehaviour
     private void DetectColliders()
     {
         Collider[] hitColliders = Physics.OverlapSphere(_player.position, 0.1f);
-       
         foreach (var hitCollider in hitColliders)
         {
-          //  FMODUnity.StudioEventEmitter component = GameObject.Find(hitCollider.gameObject.name).GetComponent<FMODUnity.StudioEventEmitter>();
-          //  if(component != null && !hitCollider.gameObject.CompareTag("Roccia")) {
-           //     component.Play();
+            FMODUnity.StudioEventEmitter component = GameObject.Find(hitCollider.gameObject.name).GetComponent<FMODUnity.StudioEventEmitter>();
+            if(component != null && !hitCollider.gameObject.CompareTag("Roccia")) {
+                component.Play();
             }
         }
     }
-
+}

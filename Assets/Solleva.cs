@@ -32,13 +32,13 @@ public class Solleva : MonoBehaviour
     [SerializeField] private UnityEvent onFirstGrab;
     [SerializeField] private bool firstRelease;
     [SerializeField] private UnityEvent onFirstRelease;
-    //[SerializeField] private FMODUnity.StudioEventEmitter _eventEmitter; // Riferimento FMOD commentato
+    [SerializeField] private FMODUnity.StudioEventEmitter _eventEmitter;
 
     private void Awake()
     {
         rigidbody = GetComponentInParent<Rigidbody>();
-        state = _activeState as IActiveState;
-        this.AssertField(state, nameof(state));
+        /* state = _activeState as IActiveState;
+        this.AssertField(state, nameof(state)); */
     }
 
     private void Start()
@@ -87,16 +87,15 @@ public class Solleva : MonoBehaviour
                 isInAir = true;
                 rigidbody.useGravity = false;
                 rigidbody.isKinematic = true;
-                /*
-                if (_eventEmitter != null)
+                if(_eventEmitter != null)
                     _eventEmitter.Play();
-                */
                 if (manager != null)
                     manager.DialogoCassaSollevata();
 
                 if (!firstGrab)
                 {
                     firstGrab = true;
+                    // scaturisci lo unity event on first grab
                     onFirstGrab.Invoke();
                 }
             }
@@ -106,13 +105,12 @@ public class Solleva : MonoBehaviour
                 transform.SetParent(null);
                 isInAir = false;
 
-                
                 if (!firstRelease)
                 {
-                    firstRelease = true;                   
+                    firstRelease = true;
+                    // scaturisci lo unity event on first release
                     onFirstRelease.Invoke();
                 }
-                
 
                 if (target && Vector3.Distance(target.position, transform.position) <= 5f)
                 {
@@ -152,4 +150,3 @@ public class Solleva : MonoBehaviour
         }
     }
 }
-

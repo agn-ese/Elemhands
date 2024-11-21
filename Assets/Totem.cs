@@ -21,18 +21,18 @@ public class Totem : MonoBehaviour
             {
                 case "Roccia":
                     tutorialManager.rockTotem = true;
-                    //GetComponent<FMODUnity.StudioEventEmitter>().Play();
+                    GetComponent<FMODUnity.StudioEventEmitter>().Play();
                     tutorialManager.CheckTotem();
                     break;
                 case "Erba":
                     tutorialManager.grassTotem = true;
                     tutorialManager.DialogoTutorialTerraFine();
-                   // GetComponent<FMODUnity.StudioEventEmitter>().Play();
+                    GetComponent<FMODUnity.StudioEventEmitter>().Play();
                     tutorialManager.CheckTotem();
                     break;
                 case "Sabbia":
                     tutorialManager.sandTotem = true;
-                   // GetComponent<FMODUnity.StudioEventEmitter>().Play();
+                    GetComponent<FMODUnity.StudioEventEmitter>().Play();
                     tutorialManager.CheckTotem();
                     break;
             }
