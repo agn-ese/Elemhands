@@ -37,8 +37,8 @@ public class Solleva : MonoBehaviour
     private void Awake()
     {
         rigidbody = GetComponentInParent<Rigidbody>();
-        state = _activeState as IActiveState;
-        this.AssertField(state, nameof(state));
+        /* state = _activeState as IActiveState;
+        this.AssertField(state, nameof(state)); */
     }
 
     private void Start()
@@ -106,13 +106,13 @@ public class Solleva : MonoBehaviour
                 transform.SetParent(null);
                 isInAir = false;
 
-                
+
                 if (!firstRelease)
                 {
-                    firstRelease = true;                   
+                    firstRelease = true;
                     onFirstRelease.Invoke();
                 }
-                
+
 
                 if (target && Vector3.Distance(target.position, transform.position) <= 5f)
                 {
