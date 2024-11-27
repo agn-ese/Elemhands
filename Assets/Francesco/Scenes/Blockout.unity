@@ -864,7 +864,6 @@ MonoBehaviour:
   oggettoEvocato: {fileID: 6366440315137088740, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
   timeCountdown: 3
   waitTime: 0
-  _eventEmitter: {fileID: 0}
 --- !u!114 &80606448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2476,7 +2475,6 @@ MonoBehaviour:
   oggettoEvocato: {fileID: 6366440315137088740, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
   timeCountdown: 3
   waitTime: 0
-  _eventEmitter: {fileID: 0}
 --- !u!1 &292637594 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5148817236446094103, guid: da5d09585c357c14f93b3995725640a1, type: 3}
@@ -3045,7 +3043,6 @@ MonoBehaviour:
   oggettoEvocato: {fileID: 6366440315137088740, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
   timeCountdown: 3
   waitTime: 0
-  _eventEmitter: {fileID: 0}
 --- !u!1 &424188603
 GameObject:
   m_ObjectHideFlags: 0
@@ -4212,6 +4209,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8256591403669836779, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1429694341}
+    - targetCorrespondingSourceObject: {fileID: 8256591403669836779, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1429694342}
   m_SourcePrefab: {fileID: 100100000, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
 --- !u!1001 &535195983
 PrefabInstance:
@@ -6665,7 +6665,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _eventEmitter: {fileID: 741312538}
 --- !u!65 &741312542
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8305,7 +8304,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _eventEmitter: {fileID: 981676418}
 --- !u!65 &981676422
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8903,7 +8901,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _eventEmitter: {fileID: 1118819135}
 --- !u!65 &1118819139
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9202,7 +9199,7 @@ PrefabInstance:
     - target: {fileID: 4723488717646916903, guid: 8e78a5c3464cba345a37ca4d54692cc8, type: 3}
       propertyPath: audioSource
       value: 
-      objectReference: {fileID: 1538938615}
+      objectReference: {fileID: 0}
     - target: {fileID: 4723488717646916903, guid: 8e78a5c3464cba345a37ca4d54692cc8, type: 3}
       propertyPath: dialogueText
       value: 
@@ -9368,8 +9365,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1208026501}
   - component: {fileID: 1208026500}
-  - component: {fileID: 1208026503}
-  - component: {fileID: 1208026502}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -9443,51 +9438,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1208026502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1208026498}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: -1
-  OverrideMaxDistance: -1
---- !u!114 &1208026503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1208026498}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nonRigidbodyVelocity: 0
-  attenuationObject: {fileID: 0}
 --- !u!1 &1225232914 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9105346570010288054, guid: b050aaef6ca67484b833ebb3cca51165, type: 3}
@@ -9840,7 +9790,6 @@ MonoBehaviour:
   oggettoEvocato: {fileID: 6366440315137088740, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
   timeCountdown: 3
   waitTime: 0
-  _eventEmitter: {fileID: 0}
 --- !u!114 &1256592680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9919,7 +9868,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _eventEmitter: {fileID: 1755355094}
 --- !u!65 &1256592682
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10197,7 +10145,6 @@ MonoBehaviour:
   oggettoEvocato: {fileID: 7226952058926275809, guid: b4d3a413788c9b04d9b79baff54f819e, type: 3}
   timeCountdown: 3
   waitTime: 0
-  _eventEmitter: {fileID: 0}
 --- !u!4 &1286216839 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4292154010595695564, guid: da5d09585c357c14f93b3995725640a1, type: 3}
@@ -11669,6 +11616,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nonRigidbodyVelocity: 0
   attenuationObject: {fileID: 0}
+--- !u!114 &1429694342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758626687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -158076976
+      Data2: 1265093232
+      Data3: -1330837828
+      Data4: 1669332902
+    Path: event:/SpiritoAriaParla
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1449078892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12985,11 +12963,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!82 &1538938615 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 5735401151119497364, guid: 8cd71237f250ea546bb9b65f6dcac8be, type: 3}
-  m_PrefabInstance: {fileID: 1538938612}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1538938616 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7602901820896688950, guid: 8cd71237f250ea546bb9b65f6dcac8be, type: 3}
@@ -13592,7 +13565,6 @@ MonoBehaviour:
   oggettoEvocato: {fileID: 6366440315137088740, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
   timeCountdown: 3
   waitTime: 0
-  _eventEmitter: {fileID: 0}
 --- !u!1001 &1659685084
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14717,8 +14689,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerLocomotor: {fileID: 1825524190}
   _player: {fileID: 1827079375}
-  _eventEmitters:
-  - {fileID: 292637602}
   firstOnSabbia: 0
   firstOnErba: 0
   tutorialManager: {fileID: 552395392}
@@ -16283,7 +16253,6 @@ MonoBehaviour:
   oggettoEvocato: {fileID: 6475261913972056670, guid: 76640817a9afa5b4ab4322f9674f8cd0, type: 3}
   timeCountdown: 3
   waitTime: 0
-  _eventEmitter: {fileID: 0}
 --- !u!114 &1875796099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17156,7 +17125,6 @@ MonoBehaviour:
   oggettoEvocato: {fileID: 6366440315137088740, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
   timeCountdown: 3
   waitTime: 0
-  _eventEmitter: {fileID: 0}
 --- !u!1001 &1993323244
 PrefabInstance:
   m_ObjectHideFlags: 0

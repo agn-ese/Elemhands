@@ -8,7 +8,7 @@
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 0
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000019FDFF4A1B8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000019FE00B5BC8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -140,12 +140,12 @@
 [LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
 [LOG] PluginEffectModel::init                  : Missing DSP plugin 'MetaXRAudio Reflections'
 [LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
-[LOG] SoundI::release                          : SpiritelloAriaParla (000001A0033DB688)
-[LOG] SoundI::release                          :     SpiritelloAriaParla (000001A053CBB798)
-[LOG] SoundI::release                          :     SpiritelloAriaParla (0000019F187C6A08)
-[LOG] SoundI::release                          : SpiritelloAriaParla (0000019F187C4C58)
-[LOG] SoundI::release                          :     SpiritelloAriaParla (000001A053CBB498)
-[LOG] SoundI::release                          :     SpiritelloAriaParla (0000019F187C8948)
+[LOG] SoundI::release                          : SpiritelloAriaParla (0000019F1C4F3218)
+[LOG] SoundI::release                          :     SpiritelloAriaParla (0000019F4E4BF7F8)
+[LOG] SoundI::release                          :     SpiritelloAriaParla (000001A076BCA1B8)
+[LOG] SoundI::release                          : BolleCilindroBlu2 (0000019F1C4F3E98)
+[LOG] SoundI::release                          :     BolleCilindroBlu2 (0000019F4E4BF978)
+[LOG] SoundI::release                          :     BolleCilindroBlu2 (000001A076BCB158)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
