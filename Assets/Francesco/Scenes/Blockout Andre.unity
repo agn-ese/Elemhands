@@ -1268,31 +1268,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8256591403670261707, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.3919024
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8256591403670261707, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.415107
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8256591403670261707, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.669401
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8256591403670261707, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.82310736
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8256591403670261707, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.075525
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8256591403670261707, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.5604868
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8256591403670261707, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.051428396
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8256591403670716433, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: field of view
@@ -1367,6 +1367,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8256591403669836779, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1429694339}
+    - targetCorrespondingSourceObject: {fileID: 8256591403669836779, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1429694341}
     - targetCorrespondingSourceObject: {fileID: 288645889188116134, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1698243980}
@@ -4858,6 +4861,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nonRigidbodyVelocity: 0
   attenuationObject: {fileID: 0}
+--- !u!114 &1429694341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517756695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -158076976
+      Data2: 1265093232
+      Data3: -1330837828
+      Data4: 1669332902
+    Path: event:/SpiritoAriaParla
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1449078892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5284,7 +5318,46 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6e37baec71287304d9e6a305b2cd51bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2140505255}
+    - targetCorrespondingSourceObject: {fileID: 6461115610806600546, guid: 6e37baec71287304d9e6a305b2cd51bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1500809072}
   m_SourcePrefab: {fileID: 100100000, guid: 6e37baec71287304d9e6a305b2cd51bd, type: 3}
+--- !u!1 &1500809071 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6461115610806600546, guid: 6e37baec71287304d9e6a305b2cd51bd, type: 3}
+  m_PrefabInstance: {fileID: 1500809070}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1500809072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500809071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -158076976
+      Data2: 1265093232
+      Data3: -1330837828
+      Data4: 1669332902
+    Path: event:/SpiritoAriaParla
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1505755639
 GameObject:
   m_ObjectHideFlags: 0
