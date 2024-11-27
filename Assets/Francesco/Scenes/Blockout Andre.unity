@@ -1356,16 +1356,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3153078170772637809, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8256591403670261707, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 355020462}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8256591403669836779, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1429694339}
     - targetCorrespondingSourceObject: {fileID: 288645889188116134, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1698243980}
   m_SourcePrefab: {fileID: 100100000, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
+--- !u!1 &517756695 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8256591403669836779, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
+  m_PrefabInstance: {fileID: 517756694}
+  m_PrefabAsset: {fileID: 0}
 --- !u!65 &532564476
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4834,6 +4844,20 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 8256591403670716433, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
   m_PrefabInstance: {fileID: 517756694}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1429694339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517756695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1001 &1449078892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6258,6 +6282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73294892c82302840a66862fb0b68539, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  platformsManager: {fileID: 0}
 --- !u!114 &1673065708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8222,6 +8247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73294892c82302840a66862fb0b68539, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  platformsManager: {fileID: 0}
 --- !u!65 &1885348932
 BoxCollider:
   m_ObjectHideFlags: 0
