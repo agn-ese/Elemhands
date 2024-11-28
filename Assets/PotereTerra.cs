@@ -20,6 +20,9 @@ public class PotereTerra : MonoBehaviour
 
     [SerializeField] private float timeCountdown = 3f;
     private float time;
+
+    private GameObject player_eye;
+
     [SerializeField] private bool waitTime = false;
     // [SerializeField] private FMODUnity.StudioEventEmitter _eventEmitter;
 
@@ -35,6 +38,8 @@ public class PotereTerra : MonoBehaviour
         }
 
         time = timeCountdown;
+
+        player_eye = GameObject.Find("CenterEyeAnchor");
     }
 
     private void Update()
@@ -61,10 +66,16 @@ public class PotereTerra : MonoBehaviour
                 firstSpawn = true;
                 onFirstSpawn.Invoke();
             }
+
             // creo un nuovo oggetto che posiziono davanti al giocatore con una rotazione su x di -90 gradi
-            GameObject oggetto = Instantiate(oggettoEvocato, transform.position + transform.forward * 2 + Vector3.up * 2, Quaternion.Euler(-90, 0, 0));
-           // if (_eventEmitter != null)
-           //     _eventEmitter.Play();
+            GameObject oggetto = Instantiate(oggettoEvocato, player_eye.transform.position + player_eye.transform.forward * 2 + Vector3.up * 2, Quaternion.Euler(-90, 0, 0));
+
+
+            //GameObject oggetto = Instantiate(oggettoEvocato, transform.position + transform.forward * 2 + Vector3.up * 2, Quaternion.Euler(-90, 0, 0));
+
+
+            // if (_eventEmitter != null)
+            //     _eventEmitter.Play();
             //oggettiEvocati.Enqueue(oggetto);
 
             // se ci sono più di 5 oggetti evocati, distruggi il primo

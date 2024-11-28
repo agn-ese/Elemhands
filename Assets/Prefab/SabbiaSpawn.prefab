@@ -136,8 +136,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -170,7 +170,6 @@ MonoBehaviour:
   onFirstRelease:
     m_PersistentCalls:
       m_Calls: []
-  _eventEmitter: {fileID: 7045752496302015302}
 --- !u!114 &104387687265493341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,7 +289,6 @@ MonoBehaviour:
   oggettoEvocato: {fileID: 291892843001650284}
   timeCountdown: 3
   waitTime: 0
-  _eventEmitter: {fileID: 3551961615162174140}
 --- !u!114 &7045752496302015302
 MonoBehaviour:
   m_ObjectHideFlags: 0

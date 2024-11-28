@@ -141,7 +141,7 @@ public class TutorialManager : MonoBehaviour
         if (rockTotem && grassTotem && sandTotem)
         {
             geysers.SetActive(true);
-          //  geysers.GetComponent<FMODUnity.StudioEventEmitter>().Play();
+            //  geysers.GetComponent<FMODUnity.StudioEventEmitter>().Play();
             DialogoGeysers();
         }
     }
