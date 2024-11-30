@@ -10,6 +10,9 @@ public class Geyser : MonoBehaviour
     [SerializeField] private float forzaEspulsione = 10f; // Forza con cui l'oggetto viene espulso
     [SerializeField] private float durataAnimazione = 1f; // Durata dell'animazione di movimento
 
+    [Header ("SuonoGeyser")]
+    public AudioSource AudioSource;
+
     private Transform sopra; // Riferimento al punto sopra il geyser
     private GameObject oggettoDentro; // Variabile per tenere traccia dell'oggetto attualmente all'interno
     private GameObject oggettoDentroPrecedente; // Variabile per tenere traccia dell'oggetto precedentemente espulso
@@ -17,6 +20,12 @@ public class Geyser : MonoBehaviour
 
     private void Start()
     {
+        //SUONO
+        if (AudioSource != null)
+        {
+            AudioSource.Play();
+        }
+
         // Prendi il figlio "Sopra" del geyser
         sopra = transform.Find("Sopra");
 
