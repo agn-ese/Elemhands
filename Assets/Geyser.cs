@@ -10,7 +10,7 @@ public class Geyser : MonoBehaviour
     [SerializeField] private float forzaEspulsione = 10f; // Forza con cui l'oggetto viene espulso
     [SerializeField] private float durataAnimazione = 1f; // Durata dell'animazione di movimento
 
-    [Header ("SuonoGeyser")]
+    [Header("SuonoGeyser")]
     public AudioSource AudioSource;
 
     private Transform sopra; // Riferimento al punto sopra il geyser
@@ -20,8 +20,6 @@ public class Geyser : MonoBehaviour
 
     private void Start()
     {
-
-
         // Prendi il figlio "Sopra" del geyser
         sopra = transform.Find("Sopra");
 
@@ -39,7 +37,6 @@ public class Geyser : MonoBehaviour
         // Se l'oggetto entrato è quello che è stato appena espulso, esci
         if (oggettoDentroPrecedente != null && other.gameObject == oggettoDentroPrecedente)
         {
-            //Debug.LogError("Oggetto entrato, ma è quello che ho appena espulso");
             return;
         }
 
@@ -64,22 +61,13 @@ public class Geyser : MonoBehaviour
 
             // Abbassa il geyser
             transform.position = new Vector3(transform.position.x, transform.position.y - abbassamento, transform.position.z);
-            //Debug.LogError("Mi sono abbassato di " + abbassamento);
-
-            //SUONO
-            if (AudioSource != null)
-            {
-                AudioSource.Play();
-            }
         }
 
         // Se l'oggetto ha il componente "Solleva" e non è già dentro
         if (other.GetComponent<Solleva>() && other.gameObject != oggettoDentro)
         {
-            // Fai rilasciare l'oggetto dal potere dell'aria
             other.GetComponent<Solleva>().RilasciaOggetto();
 
-            // Se c'è già un oggetto dentro, espellilo
             if (oggettoDentro != null && oggettoDentro != other.gameObject)
             {
                 oggettoDentroPrecedente = oggettoDentro;
@@ -88,27 +76,21 @@ public class Geyser : MonoBehaviour
                 StartCoroutine(AnnullaOggettoDentroPrecedente());
 
                 EspelliOggetto(oggettoDentroPrecedente);
-                //Debug.LogError("Oggetto dentro: " + oggettoDentro.name);
-                //Debug.LogError("Oggetto dentro precedente: " + oggettoDentroPrecedente.name);
             }
 
-            // Se non c'è nessun oggetto dentro, aggiorna la variabile
             if (oggettoDentro == null)
             {
                 oggettoDentro = other.gameObject;
             }
 
-            // Avvia l'animazione di movimento
             StartCoroutine(MuoviOggettoAlPuntoSopra(oggettoDentro));
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        // Caso in cui il player rimuove volontariamente l'oggetto con il potere dell'aria
         if (other.gameObject == oggettoDentro)
         {
-            // Rialza il geyser in base al tipo di oggetto
             if (other.tag == "Roccia")
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y + abbassamentoRoccia, transform.position.z);
@@ -129,7 +111,6 @@ public class Geyser : MonoBehaviour
 
     private IEnumerator AnnullaOggettoDentroPrecedente()
     {
-        // Attendi un tempo specificato prima di annullare oggettoDentroPrecedente
         yield return new WaitForSeconds(durataAnimazione + durataAnimazione / 2);
         oggettoDentroPrecedente = null;
     }
@@ -141,7 +122,6 @@ public class Geyser : MonoBehaviour
         Vector3 posizioneFinale = sopra.position;
         float tempoTrascorso = 0f;
 
-        // Muovi l'oggetto verso la posizione finale nelle coordinate x e z
         while (tempoTrascorso < durataAnimazione / 2)
         {
             oggetto.transform.position = Vector3.Lerp(posizioneIniziale, posizioneFinaleXZ, tempoTrascorso / durataAnimazione);
@@ -149,11 +129,9 @@ public class Geyser : MonoBehaviour
             yield return null;
         }
 
-        // Reset tempoTrascorso per la seconda fase del movimento
         tempoTrascorso = 0f;
         posizioneIniziale = oggetto.transform.position;
 
-        // Muovi l'oggetto verso la posizione finale nella coordinata y
         while (tempoTrascorso < durataAnimazione)
         {
             oggetto.transform.position = Vector3.Lerp(posizioneIniziale, posizioneFinale, tempoTrascorso / durataAnimazione);
@@ -162,7 +140,6 @@ public class Geyser : MonoBehaviour
             yield return null;
         }
 
-        // Imposta la posizione finale e disabilita la fisica
         oggetto.transform.position = sopra.position;
         oggetto.GetComponent<Rigidbody>().isKinematic = true;
         oggetto.GetComponent<Rigidbody>().useGravity = false;
@@ -170,7 +147,6 @@ public class Geyser : MonoBehaviour
 
     private void EspelliOggetto(GameObject oggetto)
     {
-        // Espelli l'oggetto verso il giocatore
         Rigidbody rb = oggetto.GetComponent<Rigidbody>();
         if (rb != null)
         {
@@ -178,13 +154,13 @@ public class Geyser : MonoBehaviour
             rb.useGravity = true;
             Vector3 direzioneEspulsione = (player.transform.position - oggetto.transform.position).normalized;
             direzioneEspulsione = new Vector3(direzioneEspulsione.x, Mathf.Max(direzioneEspulsione.y, 0.5f), direzioneEspulsione.z).normalized;
-            // Disegna retta di debug
+
             Debug.DrawRay(oggetto.transform.position, direzioneEspulsione * 10f, Color.red, 2f);
             rb.AddForce(direzioneEspulsione * forzaEspulsione, ForceMode.Impulse);
         }
 
         Debug.LogError("Oggetto " + oggetto.name + " espulso, geyser abbassato");
-        // Rialza il geyser in base al tipo di oggetto
+
         if (oggetto.tag == "Roccia")
         {
             transform.position = new Vector3(transform.position.x, transform.position.y + abbassamentoRoccia, transform.position.z);
@@ -196,6 +172,11 @@ public class Geyser : MonoBehaviour
         else if (oggetto.tag == "Sabbia")
         {
             transform.position = new Vector3(transform.position.x, transform.position.y + abbassamentoSabbia, transform.position.z);
+        }
+
+        if (AudioSource != null)
+        {
+            AudioSource.Play();
         }
     }
 }
