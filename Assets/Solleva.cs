@@ -99,12 +99,33 @@ public class Solleva : MonoBehaviour
                     firstGrab = true;
                     onFirstGrab.Invoke();
                 }
+
+                if (this.gameObject.GetComponent<Fluttua>())
+                {
+                    this.gameObject.GetComponent<Fluttua>().SetFluttuamento(true);
+                    this.gameObject.GetComponent<Fluttua>().SetGainFluttuamento(0.0001f);
+                }
+                else
+                {
+                    // fai fluttuare l'oggetto
+                    this.gameObject.AddComponent<Fluttua>();
+                    this.gameObject.GetComponent<Fluttua>().SetFluttuamento(true);
+                    this.gameObject.GetComponent<Fluttua>().SetGainFluttuamento(0.0001f);
+                }
+
+
+
+
             }
             else if (isInAir && !waitTime)
             {
                 waitTime = true;
                 transform.SetParent(null);
                 isInAir = false;
+
+                this.gameObject.GetComponent<Fluttua>().SetFluttuamento(false);
+
+
 
 
                 if (!firstRelease)
@@ -135,6 +156,7 @@ public class Solleva : MonoBehaviour
                 {
                     rigidbody.useGravity = true;
                     rigidbody.isKinematic = false;
+
                 }
 
 
@@ -149,6 +171,9 @@ public class Solleva : MonoBehaviour
             waitTime = true;
             transform.SetParent(null);
             isInAir = false;
+            this.gameObject.GetComponent<Fluttua>().SetFluttuamento(false);
+            rigidbody.useGravity = true;
+            rigidbody.isKinematic = false;
         }
     }
 }
