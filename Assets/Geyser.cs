@@ -20,11 +20,7 @@ public class Geyser : MonoBehaviour
 
     private void Start()
     {
-        //SUONO
-        if (AudioSource != null)
-        {
-            AudioSource.Play();
-        }
+
 
         // Prendi il figlio "Sopra" del geyser
         sopra = transform.Find("Sopra");
@@ -69,6 +65,12 @@ public class Geyser : MonoBehaviour
             // Abbassa il geyser
             transform.position = new Vector3(transform.position.x, transform.position.y - abbassamento, transform.position.z);
             //Debug.LogError("Mi sono abbassato di " + abbassamento);
+
+            //SUONO
+            if (AudioSource != null)
+            {
+                AudioSource.Play();
+            }
         }
 
         // Se l'oggetto ha il componente "Solleva" e non è già dentro
