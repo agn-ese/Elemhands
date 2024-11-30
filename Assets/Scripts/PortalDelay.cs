@@ -5,6 +5,9 @@ using UnityEngine;
 public class PortalDelay : MonoBehaviour
 {
     [SerializeField]private Platformsmanager platformsManager;
+
+    public AudioSource portalAudioSource;
+
     void Start()
     {
         
@@ -25,6 +28,10 @@ public class PortalDelay : MonoBehaviour
     IEnumerator delayOpenPortal(int delayTime)
     {
         yield return new WaitForSeconds(delayTime);
+        if (portalAudioSource != null)
+        {
+            portalAudioSource.Play();
+        }
        // GetComponent<FMODUnity.StudioEventEmitter>().Play();
         platformsManager.OpenNewArea();
         transform.gameObject.SetActive(false);

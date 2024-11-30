@@ -26,6 +26,9 @@ public class PotereTerra : MonoBehaviour
     [SerializeField] private bool waitTime = false;
     // [SerializeField] private FMODUnity.StudioEventEmitter _eventEmitter;
 
+    //AUDIOSOURCES (CODICE VIRGINIA)
+    public AudioSource _audioSource;
+
     private void Start()
     {
         firstSpawn = false;
@@ -70,6 +73,10 @@ public class PotereTerra : MonoBehaviour
             // creo un nuovo oggetto che posiziono davanti al giocatore con una rotazione su x di -90 gradi
             GameObject oggetto = Instantiate(oggettoEvocato, player_eye.transform.position + player_eye.transform.forward * 2 + Vector3.up * 2, Quaternion.Euler(-90, 0, 0));
 
+            if  (_audioSource != null)
+            {
+                _audioSource.Play();
+            }
 
             //GameObject oggetto = Instantiate(oggettoEvocato, transform.position + transform.forward * 2 + Vector3.up * 2, Quaternion.Euler(-90, 0, 0));
 
