@@ -73,7 +73,7 @@ public class PotereTerra : MonoBehaviour
             // creo un nuovo oggetto che posiziono davanti al giocatore con una rotazione su x di -90 gradi
             GameObject oggetto = Instantiate(oggettoEvocato, player_eye.transform.position + player_eye.transform.forward * 2 + Vector3.up * 2, Quaternion.Euler(-90, 0, 0));
 
-            if  (_audioSource != null)
+            if (_audioSource != null)
             {
                 _audioSource.Play();
             }
