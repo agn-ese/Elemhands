@@ -28,6 +28,9 @@ public class Solleva : MonoBehaviour
 
     [SerializeField] private AudioSource sound;
 
+    [SerializeField] private AudioClip soundGrab;
+    [SerializeField] private AudioClip soundLeave;
+
     [SerializeField] private bool firstGrab;
     [SerializeField] private UnityEvent onFirstGrab;
     [SerializeField] private bool firstRelease;
@@ -60,6 +63,10 @@ public class Solleva : MonoBehaviour
         firstRelease = false;
         time = timeCountdown;
 
+        soundGrab = Resources.Load<AudioClip>("Sounds/PotereAria");
+
+        soundLeave = Resources.Load<AudioClip>("Sounds/PortaleSiApre");
+
     }
 
     private void Update()
@@ -87,10 +94,14 @@ public class Solleva : MonoBehaviour
                 isInAir = true;
                 rigidbody.useGravity = false;
                 rigidbody.isKinematic = true;
-                /*
-                if (_eventEmitter != null)
-                    _eventEmitter.Play();
-                */
+
+
+                if (sound != null)
+                {
+                    sound.clip = soundGrab;
+                    sound.Play();
+                }
+
                 if (manager != null)
                     manager.DialogoCassaSollevata();
 
@@ -125,6 +136,12 @@ public class Solleva : MonoBehaviour
 
                 this.gameObject.GetComponent<Fluttua>().SetFluttuamento(false);
 
+                if (sound != null)
+                {
+                    sound.clip = soundLeave;
+                    sound.Play();
+                }
+
 
 
 
@@ -149,7 +166,7 @@ public class Solleva : MonoBehaviour
                         reticle.ReticleMode = ReticleDataTeleport.TeleportReticleMode.ValidTarget;
                     }
                     spline.Play();
-                    sound.Play();
+
 
                 }
                 else

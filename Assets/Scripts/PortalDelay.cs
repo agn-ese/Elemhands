@@ -4,35 +4,39 @@ using UnityEngine;
 
 public class PortalDelay : MonoBehaviour
 {
-    [SerializeField]private Platformsmanager platformsManager;
+    [SerializeField] private Platformsmanager platformsManager;
 
     public AudioSource portalAudioSource;
 
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    public void openPortal()
+    public async void openPortal()
     {
-        if(transform.gameObject.activeSelf) 
+        if (transform.gameObject.activeSelf)
+        {
             StartCoroutine(delayOpenPortal(5));
+            if (portalAudioSource != null)
+            {
+                portalAudioSource.PlayDelayed(4);
+            }
+        }
+
     }
 
     IEnumerator delayOpenPortal(int delayTime)
     {
         yield return new WaitForSeconds(delayTime);
-        if (portalAudioSource != null)
-        {
-            portalAudioSource.Play();
-        }
-       // GetComponent<FMODUnity.StudioEventEmitter>().Play();
+
+        // GetComponent<FMODUnity.StudioEventEmitter>().Play();
         platformsManager.OpenNewArea();
         transform.gameObject.SetActive(false);
     }

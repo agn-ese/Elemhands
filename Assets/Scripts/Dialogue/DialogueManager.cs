@@ -95,6 +95,17 @@ public class DialogueManager : MonoBehaviour
 
     }
 
+    public void SoundGestureNextSentence(AudioSource source)
+    {
+        if (stato == "dialogo")
+        {
+            if (source != null)
+            {
+                source.Play();
+            }
+        }
+    }
+
     IEnumerator TypeSentence(string sentence, string name)
     {
         nameText.text = name;
