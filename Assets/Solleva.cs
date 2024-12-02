@@ -65,7 +65,7 @@ public class Solleva : MonoBehaviour
 
         soundGrab = Resources.Load<AudioClip>("Sounds/PotereAria");
 
-        soundLeave = Resources.Load<AudioClip>("Sounds/PortaleSiApre");
+        soundLeave = Resources.Load<AudioClip>("Sounds/PotereAriaRitorno");
 
     }
 

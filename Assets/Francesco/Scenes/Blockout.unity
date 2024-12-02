@@ -1240,7 +1240,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Spatialize: 0
+  Spatialize: 1
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
@@ -1355,7 +1355,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Spatialize: 0
+  Spatialize: 1
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
@@ -3702,7 +3702,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -4995,7 +4995,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Spatialize: 0
+  Spatialize: 1
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
@@ -5035,7 +5035,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -5809,9 +5809,17 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoCassa.Array.data[0].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 2bdd862b2cce0504e8492095e8a40e23, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoCassa.Array.data[0].image
       value: 
       objectReference: {fileID: 21300000, guid: 60abd200ed149694d88d0379946cf70a, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoCassa.Array.data[1].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 779a1119994ec3a4fa8f3aae9d94b120, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoCassa.Array.data[1].image
       value: 
@@ -5849,21 +5857,33 @@ PrefabInstance:
       value: Gaia
       objectReference: {fileID: 0}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoInizio.Array.data[0].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 6021a96868938ff4491f33efcbddfe3f, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoInizio.Array.data[0].image
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoInizio.Array.data[1].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 6021a96868938ff4491f33efcbddfe3f, type: 3}
+      objectReference: {fileID: 8300000, guid: e11237921621c0d49885c0a60b041a77, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoInizio.Array.data[1].image
       value: 
       objectReference: {fileID: 21300000, guid: 60abd200ed149694d88d0379946cf70a, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoInizio.Array.data[2].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: d9731b46451934f4ab8a39c27b28a05e, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoInizio.Array.data[2].image
       value: 
       objectReference: {fileID: 21300000, guid: 60abd200ed149694d88d0379946cf70a, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoInizio.Array.data[3].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: ca878d79f3cec3f4c9e8c03008154f93, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoInizio.Array.data[3].image
       value: 
@@ -5871,11 +5891,15 @@ PrefabInstance:
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoInizio.Array.data[4].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 6021a96868938ff4491f33efcbddfe3f, type: 3}
+      objectReference: {fileID: 8300000, guid: 956b2968b1f7ec249816705bffbee55d, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoInizio.Array.data[4].image
       value: 
       objectReference: {fileID: 21300000, guid: 60abd200ed149694d88d0379946cf70a, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoInizio.Array.data[5].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 5b2e3acc315f63547ab5f8554a96bf29, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoInizio.Array.data[5].image
       value: 
@@ -5916,6 +5940,10 @@ PrefabInstance:
       propertyPath: dialogoFineDemo.Array.data[0].image
       value: 
       objectReference: {fileID: 21300000, guid: c8f3bdb5b71346f46a5fb0bc6ff35816, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoFineDemo.Array.data[1].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: d9731b46451934f4ab8a39c27b28a05e, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoFineDemo.Array.data[1].image
       value: 
@@ -5969,9 +5997,17 @@ PrefabInstance:
         esso e usa il tuo gesto di teletrasporto per raggiungerlo!"
       objectReference: {fileID: 0}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoCheckpoint.Array.data[0].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: edd59babd265b7d4eb65930b18d9b464, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoCheckpoint.Array.data[0].image
       value: 
       objectReference: {fileID: 21300000, guid: 60abd200ed149694d88d0379946cf70a, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoCheckpoint.Array.data[1].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 6021a96868938ff4491f33efcbddfe3f, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoCheckpoint.Array.data[1].image
       value: 
@@ -6109,25 +6145,49 @@ PrefabInstance:
       value: Gaia
       objectReference: {fileID: 0}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoFineTutorialAria.Array.data[0].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: d396b7136e3ccee4188347b46c6ea381, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoFineTutorialAria.Array.data[0].image
       value: 
       objectReference: {fileID: 21300000, guid: 60abd200ed149694d88d0379946cf70a, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoFineTutorialAria.Array.data[1].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 6bd8ca6951e31a841b3c99a38369c213, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoFineTutorialAria.Array.data[1].image
       value: 
       objectReference: {fileID: 21300000, guid: 60abd200ed149694d88d0379946cf70a, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoFineTutorialAria.Array.data[2].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 9035d498024ae1348bf226152de3ac21, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoFineTutorialAria.Array.data[2].image
       value: 
       objectReference: {fileID: 21300000, guid: 60abd200ed149694d88d0379946cf70a, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoFineTutorialAria.Array.data[3].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 00245983ba42b5244ad011cd4b35e0ee, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoFineTutorialAria.Array.data[3].image
       value: 
       objectReference: {fileID: 21300000, guid: 60abd200ed149694d88d0379946cf70a, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoFineTutorialAria.Array.data[4].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 150a24b53bc9d404783099fa4aa33efc, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoFineTutorialAria.Array.data[4].image
       value: 
       objectReference: {fileID: 21300000, guid: 60abd200ed149694d88d0379946cf70a, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoFineTutorialAria.Array.data[5].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 06b6104c3a89f914c9332b614edbc27f, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoFineTutorialAria.Array.data[5].image
       value: 
@@ -6326,21 +6386,41 @@ PrefabInstance:
         davanti a te e replica quello che fanno!'
       objectReference: {fileID: 0}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoObbiettivoRaggiunto.Array.data[0].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: de9acf1b11cfb284f8830692b735050c, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoObbiettivoRaggiunto.Array.data[0].image
       value: 
       objectReference: {fileID: 21300000, guid: 60abd200ed149694d88d0379946cf70a, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoObbiettivoRaggiunto.Array.data[1].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 316be7544b386a44eb6d99b3a254cc11, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoObbiettivoRaggiunto.Array.data[1].image
       value: 
       objectReference: {fileID: 21300000, guid: 60abd200ed149694d88d0379946cf70a, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoObbiettivoRaggiunto.Array.data[2].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 98cfc2a914ba7304f940182e44e9aca5, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoObbiettivoRaggiunto.Array.data[2].image
       value: 
       objectReference: {fileID: 21300000, guid: 60abd200ed149694d88d0379946cf70a, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoObbiettivoRaggiunto.Array.data[3].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: e1295153141c6e6409c39477ae5ed989, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoObbiettivoRaggiunto.Array.data[3].image
       value: 
       objectReference: {fileID: 21300000, guid: 60abd200ed149694d88d0379946cf70a, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoObbiettivoRaggiunto.Array.data[4].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 0c9ba189ddc677f43b0e3d55e4e71e10, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoObbiettivoRaggiunto.Array.data[4].image
       value: 
@@ -7191,7 +7271,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Spatialize: 0
+  Spatialize: 1
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
@@ -7231,7 +7311,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -9527,7 +9607,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Spatialize: 0
+  Spatialize: 1
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
@@ -14343,7 +14423,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Spatialize: 0
+  Spatialize: 1
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
@@ -16270,7 +16350,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Spatialize: 0
+  Spatialize: 1
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
@@ -16709,7 +16789,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Spatialize: 0
+  Spatialize: 1
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
@@ -16749,7 +16829,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -17697,7 +17777,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -19845,7 +19925,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Spatialize: 0
+  Spatialize: 1
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
@@ -19885,7 +19965,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -21300,7 +21380,7 @@ AudioSource:
   Loop: 0
   Mute: 0
   Spatialize: 1
-  SpatializePostEffects: 1
+  SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -21339,7 +21419,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.998
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
