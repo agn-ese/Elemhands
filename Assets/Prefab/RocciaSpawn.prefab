@@ -19,8 +19,6 @@ GameObject:
   - component: {fileID: 2449156000214172727}
   - component: {fileID: 2506938442554408427}
   - component: {fileID: 3253353090528530257}
-  - component: {fileID: 1316570137935021168}
-  - component: {fileID: 1424933452415544992}
   m_Layer: 3
   m_Name: RocciaSpawn
   m_TagString: Roccia
@@ -38,10 +36,11 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 80, y: 80, z: 42}
+  m_LocalScale: {x: 80, y: 80, z: 81.8}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3822524557127149996}
+  - {fileID: 3273185474723656903}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!33 &4158043401842950740
@@ -164,6 +163,8 @@ MonoBehaviour:
   reticles: []
   spline: {fileID: 0}
   sound: {fileID: 0}
+  soundGrab: {fileID: 0}
+  soundLeave: {fileID: 0}
   firstGrab: 0
   onFirstGrab:
     m_PersistentCalls:
@@ -302,68 +303,7 @@ MonoBehaviour:
   oggettoEvocato: {fileID: 2261545134780420187}
   timeCountdown: 3
   waitTime: 0
---- !u!114 &1316570137935021168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2261545134780420187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -1836238404
-      Data2: 1147541508
-      Data3: -525825649
-      Data4: -620341609
-    Path: event:/PotereAria
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!114 &1424933452415544992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2261545134780420187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -1514452768
-      Data2: 1299741339
-      Data3: 570816412
-      Data4: 1877892218
-    Path: event:/PotereTerra
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  _audioSource: {fileID: 0}
 --- !u!1001 &3640857557128973895
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -432,6 +372,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b2452e032697edb4e914fb73be558ff3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -441,4 +385,92 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b2452e032697edb4e914fb73be558ff3, type: 3}
   m_PrefabInstance: {fileID: 3640857557128973895}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9114515747695473305
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4550161980709130083}
+    m_Modifications:
+    - target: {fileID: 5985832633048270430, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.56709427
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985832633048270430, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.56709427
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985832633048270430, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.76541
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985832633048270430, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985832633048270430, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00004
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985832633048270430, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0102
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985832633048270430, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985832633048270430, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985832633048270430, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985832633048270430, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985832633048270430, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985832633048270430, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985832633048270430, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985832633048270430, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366440315137088740, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
+      propertyPath: m_Name
+      value: Block_Rock
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: -6489326409604759132, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
+    - {fileID: -132659924790328555, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
+    - {fileID: -3111261068674839186, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
+    - {fileID: 381507661150577795, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
+    - {fileID: 495160516938723997, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
+    - {fileID: 6862229931148991663, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
+    - {fileID: 7223570668156019796, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
+    - {fileID: 6364758797530713851, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
+    - {fileID: 8683077929457535117, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
+    - {fileID: 6822453667668323795, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
+--- !u!4 &3273185474723656903 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5985832633048270430, guid: bb40b364618d1a64b84d938c69f79516, type: 3}
+  m_PrefabInstance: {fileID: 9114515747695473305}
   m_PrefabAsset: {fileID: 0}
