@@ -539,6 +539,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 79a768ad34ce5a146ab5dab79148b2b4, type: 3}
   m_PrefabInstance: {fileID: 33641953}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &38691022 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6545916774158445966, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
+  m_PrefabInstance: {fileID: 517756694}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &38691025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38691022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b863a6746a749b34e82331c176eb4c2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &39512520
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5396,13 +5413,17 @@ PrefabInstance:
       propertyPath: _whenActivated.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.AudioSource, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6545916774158445966, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6778191006967002734, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7192633551951190408, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8219528946851945268, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: _whenActivated.m_PersistentCalls.m_Calls.Array.size
@@ -5447,6 +5468,10 @@ PrefabInstance:
     - target: {fileID: 8256591403670261707, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: m_LocalPosition.z
       value: -75.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 8256591403670716433, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 95
       objectReference: {fileID: 0}
     - target: {fileID: 8494819785639257668, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5511,6 +5536,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8256591403669836779, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1429694344}
+    - targetCorrespondingSourceObject: {fileID: 6545916774158445966, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 38691025}
     - targetCorrespondingSourceObject: {fileID: 3611786736009850618, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 517756696}
