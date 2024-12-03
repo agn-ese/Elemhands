@@ -2035,12 +2035,12 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 172423131}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 219349af15d50594a8a3da97519774c8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8c14c5f4ffeccbf4ead56fb60d336449, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.432
+  m_Volume: 1
   m_Pitch: -0.13
   Loop: 1
   Mute: 0
@@ -2049,7 +2049,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 50
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -4161,9 +4161,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 655afdbe49eecc84da8522bd65000d88, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 25ed8bf23ea287843a97b978006ab55a, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.824
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4353,7 +4353,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 15db1d7008350004c8783b0b2b05a6ea, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7bc916034162a8242a88e46f1e18e717, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -5823,7 +5823,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8494819785639257668, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 65
+      value: 65.7
       objectReference: {fileID: 0}
     - target: {fileID: 8494819785639257668, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5831,7 +5831,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8494819785639257668, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 74.5
+      value: 75.3
       objectReference: {fileID: 0}
     - target: {fileID: 8494819785639257668, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6397,9 +6397,17 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoGeysers.Array.data[0].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 31b2e13f068e827489249d3c2627f676, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoGeysers.Array.data[0].image
       value: 
       objectReference: {fileID: 21300000, guid: c8f3bdb5b71346f46a5fb0bc6ff35816, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoGeysers.Array.data[1].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 0682dcc5ae55f2f419c5a16cc192453f, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoGeysers.Array.data[1].image
       value: 
@@ -6412,6 +6420,10 @@ PrefabInstance:
       propertyPath: dialogoCassa.Array.data[2].sentence
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoFineDemo.Array.data[0].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 339ea69c1f5a0754b9528532cff17164, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoFineDemo.Array.data[0].image
       value: 
@@ -6545,25 +6557,49 @@ PrefabInstance:
         aperto!"
       objectReference: {fileID: 0}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoTutorialTerra.Array.data[0].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: cf5f75c4ba88dc146873878581b5193a, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoTutorialTerra.Array.data[0].image
       value: 
       objectReference: {fileID: 21300000, guid: c8f3bdb5b71346f46a5fb0bc6ff35816, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoTutorialTerra.Array.data[1].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 31b2e13f068e827489249d3c2627f676, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoTutorialTerra.Array.data[1].image
       value: 
       objectReference: {fileID: 21300000, guid: c8f3bdb5b71346f46a5fb0bc6ff35816, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoTutorialTerra.Array.data[2].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 0682dcc5ae55f2f419c5a16cc192453f, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoTutorialTerra.Array.data[2].image
       value: 
       objectReference: {fileID: 21300000, guid: c8f3bdb5b71346f46a5fb0bc6ff35816, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoTutorialTerra.Array.data[3].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: a0b35f4ee2f70ad41bd6e11b84e9370e, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoTutorialTerra.Array.data[3].image
       value: 
       objectReference: {fileID: 21300000, guid: c8f3bdb5b71346f46a5fb0bc6ff35816, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoTutorialTerra.Array.data[4].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: cf5f75c4ba88dc146873878581b5193a, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoTutorialTerra.Array.data[4].image
       value: 
       objectReference: {fileID: 21300000, guid: c8f3bdb5b71346f46a5fb0bc6ff35816, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoTutorialTerra.Array.data[5].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 339ea69c1f5a0754b9528532cff17164, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoTutorialTerra.Array.data[5].image
       value: 
@@ -6669,29 +6705,57 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 60abd200ed149694d88d0379946cf70a, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoIntroduzioneGaia.Array.data[0].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: cf5f75c4ba88dc146873878581b5193a, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoIntroduzioneGaia.Array.data[0].image
       value: 
       objectReference: {fileID: 21300000, guid: c8f3bdb5b71346f46a5fb0bc6ff35816, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoIntroduzioneGaia.Array.data[1].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 31b2e13f068e827489249d3c2627f676, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoIntroduzioneGaia.Array.data[1].image
       value: 
       objectReference: {fileID: 21300000, guid: c8f3bdb5b71346f46a5fb0bc6ff35816, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoIntroduzioneGaia.Array.data[2].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 0682dcc5ae55f2f419c5a16cc192453f, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoIntroduzioneGaia.Array.data[2].image
       value: 
       objectReference: {fileID: 21300000, guid: c8f3bdb5b71346f46a5fb0bc6ff35816, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoIntroduzioneGaia.Array.data[3].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 674e56061be0d71458f0bbab671bc215, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoIntroduzioneGaia.Array.data[3].image
       value: 
       objectReference: {fileID: 21300000, guid: c8f3bdb5b71346f46a5fb0bc6ff35816, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoIntroduzioneGaia.Array.data[4].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 339ea69c1f5a0754b9528532cff17164, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoIntroduzioneGaia.Array.data[4].image
       value: 
       objectReference: {fileID: 21300000, guid: c8f3bdb5b71346f46a5fb0bc6ff35816, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoIntroduzioneGaia.Array.data[5].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 3ee508b5c1b9a0a45adaf2287a137406, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoIntroduzioneGaia.Array.data[5].image
       value: 
       objectReference: {fileID: 21300000, guid: c8f3bdb5b71346f46a5fb0bc6ff35816, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoIntroduzioneGaia.Array.data[6].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 8172cdbbf1ca7544db9f1f80ddf0894e, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoIntroduzioneGaia.Array.data[6].image
       value: 
@@ -6750,13 +6814,25 @@ PrefabInstance:
       value: Gaia
       objectReference: {fileID: 0}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoTutorialTerraFine.Array.data[0].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 3ee508b5c1b9a0a45adaf2287a137406, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoTutorialTerraFine.Array.data[0].image
       value: 
       objectReference: {fileID: 21300000, guid: c8f3bdb5b71346f46a5fb0bc6ff35816, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoTutorialTerraFine.Array.data[1].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 8172cdbbf1ca7544db9f1f80ddf0894e, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoTutorialTerraFine.Array.data[1].image
       value: 
       objectReference: {fileID: 21300000, guid: c8f3bdb5b71346f46a5fb0bc6ff35816, type: 3}
+    - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
+      propertyPath: dialogoTutorialTerraFine.Array.data[2].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: d13058c24341e0742a56b64a2e60e6ce, type: 3}
     - target: {fileID: 3227522219095506495, guid: 0b4fe12c026054c489940af611d2890e, type: 3}
       propertyPath: dialogoTutorialTerraFine.Array.data[2].image
       value: 

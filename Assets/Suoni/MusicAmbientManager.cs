@@ -12,8 +12,8 @@ public class MusicAmbientManager : MonoBehaviour
     public Transform centroIsola; // Il centro dell'isola
     public Transform centroForesta; // Il centro della foresta
 
-    private float volumeMare = 0.8f; // Volume del mare
-    private float volumeForesta = 1f; // Volume della foresta, più basso all'inizio
+    private float volumeMare = 0.6f; // Volume del mare
+    private float volumeForesta = 0.9f; // Volume della foresta, più basso all'inizio
     private float volumeMinimoMare = 0.3f; // Volume minimo del mare (quando lontano)
     private float distanzaRiduzione = 20f; // Distanza per iniziare a ridurre il volume del mare e aumentare quello della foresta
     private float distanzaAttivaForesta = 30f; // Distanza per cominciare a sentire la foresta
@@ -52,8 +52,8 @@ public class MusicAmbientManager : MonoBehaviour
         if (distanzaCentroForesta < distanzaAttivaForesta)
         {
             // Aumenta gradualmente il volume della foresta in base alla distanza
-            forestaSound.volume = Mathf.Lerp(forestaSound.volume, volumeForesta, Time.deltaTime * 2);
-            mareSound.volume = Mathf.Lerp(mareSound.volume, volumeMare, Time.deltaTime / 4); //Diminuisci il volume del mare
+            forestaSound.volume = Mathf.Lerp(forestaSound.volume, volumeForesta, Time.deltaTime * 3);
+            mareSound.volume = Mathf.Lerp(mareSound.volume, volumeMare, Time.deltaTime / 5); //Diminuisci il volume del mare
         }
         else
         {
