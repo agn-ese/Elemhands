@@ -13,7 +13,7 @@ public class MusicAmbientManager : MonoBehaviour
     public Transform centroForesta; // Il centro della foresta
 
     private float volumeMare = 0.6f; // Volume del mare
-    private float volumeForesta = 0.9f; // Volume della foresta, più basso all'inizio
+    private float volumeForesta = 0.7f; // Volume della foresta, più basso all'inizio
     private float volumeMinimoMare = 0.3f; // Volume minimo del mare (quando lontano)
     private float distanzaRiduzione = 20f; // Distanza per iniziare a ridurre il volume del mare e aumentare quello della foresta
     private float distanzaAttivaForesta = 30f; // Distanza per cominciare a sentire la foresta
