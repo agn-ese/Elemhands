@@ -19,7 +19,7 @@ public class TutorialManager : MonoBehaviour
 
     [HideInInspector]
     public bool obiettivoRaggiunto;
-    [HideInInspector]
+
     public bool cassaAlzata;
     [HideInInspector]
     public bool tutorialAriaFinito = false;
