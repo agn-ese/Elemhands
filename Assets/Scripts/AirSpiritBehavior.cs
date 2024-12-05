@@ -8,7 +8,7 @@ public class AirSpiritBehavior : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] Transform player;
     private NavMeshAgent agent;
-    private float minDistance = 6f;
+    private float minDistance = 10f;
     private float rotationSpeed = 1.0f;
     void Start()
     {

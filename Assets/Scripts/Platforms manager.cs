@@ -33,7 +33,7 @@ public class Platformsmanager : MonoBehaviour
 
     Transform[] roccias;
     
-    public void Start() {
+    /*public void Start() {
         roccias = new Transform[] { roccia1, roccia2, roccia3, roccia4 };
     }
 
@@ -114,7 +114,7 @@ public class Platformsmanager : MonoBehaviour
             ready = false;
             time = 0;
         }
-    }
+    }*/
 
     public void OpenNewArea() //Funzione per aprire la seconda area
     {

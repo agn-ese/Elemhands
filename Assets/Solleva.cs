@@ -95,6 +95,8 @@ public class Solleva : MonoBehaviour
                 rigidbody.useGravity = false;
                 rigidbody.isKinematic = true;
 
+                GetComponent<TeleportInteractable>().AllowTeleport = false;
+
 
                 if (sound != null)
                 {
@@ -142,16 +144,14 @@ public class Solleva : MonoBehaviour
                     sound.Play();
                 }
 
-
-
-
                 if (!firstRelease)
                 {
                     firstRelease = true;
                     onFirstRelease.Invoke();
                 }
 
-
+                GetComponent<TeleportInteractable>().AllowTeleport = true;
+                
                 if (target && Vector3.Distance(target.position, transform.position) <= 5f)
                 {
                     transform.position = target.position;
@@ -191,6 +191,7 @@ public class Solleva : MonoBehaviour
             this.gameObject.GetComponent<Fluttua>().SetFluttuamento(false);
             rigidbody.useGravity = true;
             rigidbody.isKinematic = false;
+            GetComponent<TeleportInteractable>().AllowTeleport = true;
         }
     }
 }

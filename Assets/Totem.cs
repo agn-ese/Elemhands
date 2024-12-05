@@ -9,21 +9,17 @@ public class Totem : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        // Se ha il componente "Solleva"
-        if (other.GetComponent<Solleva>())
-        {
-            // Rilascia l'oggetto sollevato
-            other.GetComponent<Solleva>().RilasciaOggetto();
-        }
-
         // Verifica se l'oggetto ha lo stesso tag del totem
         if (other.gameObject.tag == this.gameObject.tag)
         {
+            if (other.GetComponent<Solleva>()) other.GetComponent<Solleva>().RilasciaOggetto();
             // Gestisci il caso in base al tag del totem
             switch (this.gameObject.tag)
             {
                 case "Roccia":
                     tutorialManager.rockTotem = true;
+                    // Se ha il componente "Solleva"
+                    other.transform.localPosition = new Vector3(21.9876f, 0.6058649f, 14.01956f);
                     // Riproduci il suono di feedback corretto
                     if (CorrectSrc != null)
                     {
@@ -34,6 +30,7 @@ public class Totem : MonoBehaviour
 
                 case "Erba":
                     tutorialManager.grassTotem = true;
+                    other.transform.localPosition = new Vector3(21.96f, 0.5051451f, 19.02f);
                     // Riproduci il suono di feedback corretto
                     if (CorrectSrc != null)
                     {
@@ -45,6 +42,7 @@ public class Totem : MonoBehaviour
 
                 case "Sabbia":
                     tutorialManager.sandTotem = true;
+                    other.transform.localPosition = new Vector3(22.03f, 0.5675723f, 9.03f);
                     // Riproduci il suono di feedback corretto
                     if (CorrectSrc != null)
                     {
