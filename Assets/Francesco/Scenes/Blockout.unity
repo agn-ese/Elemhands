@@ -2104,7 +2104,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 527366267551888592, guid: 08ec6bf6dfd06324dbf15d07c09e9000, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1318.8
+      value: 2967.3
       objectReference: {fileID: 0}
     - target: {fileID: 527366267551888592, guid: 08ec6bf6dfd06324dbf15d07c09e9000, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2154,10 +2154,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3773485393560858112, guid: 08ec6bf6dfd06324dbf15d07c09e9000, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0099
+      objectReference: {fileID: 0}
     - target: {fileID: 7388795137834812289, guid: 08ec6bf6dfd06324dbf15d07c09e9000, type: 3}
       propertyPath: AudioSource
       value: 
       objectReference: {fileID: 241722598}
+    - target: {fileID: 7388795137834812289, guid: 08ec6bf6dfd06324dbf15d07c09e9000, type: 3}
+      propertyPath: abbassamentoErba
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388795137834812289, guid: 08ec6bf6dfd06324dbf15d07c09e9000, type: 3}
+      propertyPath: abbassamentoRoccia
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388795137834812289, guid: 08ec6bf6dfd06324dbf15d07c09e9000, type: 3}
+      propertyPath: abbassamentoSabbia
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14161,7 +14177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2cf108585b4beb44dba9203cda64efc1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.78
+      value: 25.42
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2cf108585b4beb44dba9203cda64efc1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -18868,7 +18884,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 527366267551888592, guid: 08ec6bf6dfd06324dbf15d07c09e9000, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1318.8
+      value: 2967.3
       objectReference: {fileID: 0}
     - target: {fileID: 527366267551888592, guid: 08ec6bf6dfd06324dbf15d07c09e9000, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18914,13 +18930,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Geyser (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3773485393560858112, guid: 08ec6bf6dfd06324dbf15d07c09e9000, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0099
+      objectReference: {fileID: 0}
     - target: {fileID: 7388795137834812289, guid: 08ec6bf6dfd06324dbf15d07c09e9000, type: 3}
       propertyPath: AudioSource
       value: 
       objectReference: {fileID: 1804452929}
     - target: {fileID: 7388795137834812289, guid: 08ec6bf6dfd06324dbf15d07c09e9000, type: 3}
       propertyPath: abbassamentoErba
-      value: 2
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388795137834812289, guid: 08ec6bf6dfd06324dbf15d07c09e9000, type: 3}
+      propertyPath: abbassamentoRoccia
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388795137834812289, guid: 08ec6bf6dfd06324dbf15d07c09e9000, type: 3}
+      propertyPath: abbassamentoSabbia
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20918,8 +20946,12 @@ PrefabInstance:
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8946660040297601765, guid: da5d09585c357c14f93b3995725640a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.5095825
+      objectReference: {fileID: 0}
+    - target: {fileID: 8946660040297601765, guid: da5d09585c357c14f93b3995725640a1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.2
+      value: 23.03
       objectReference: {fileID: 0}
     - target: {fileID: 8946660040297601765, guid: da5d09585c357c14f93b3995725640a1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -22776,7 +22808,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 527366267551888592, guid: 08ec6bf6dfd06324dbf15d07c09e9000, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1318.8
+      value: 2967.3
       objectReference: {fileID: 0}
     - target: {fileID: 527366267551888592, guid: 08ec6bf6dfd06324dbf15d07c09e9000, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22822,10 +22854,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Geyser (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3773485393560858112, guid: 08ec6bf6dfd06324dbf15d07c09e9000, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3773485393560858112, guid: 08ec6bf6dfd06324dbf15d07c09e9000, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0099
+      objectReference: {fileID: 0}
     - target: {fileID: 7388795137834812289, guid: 08ec6bf6dfd06324dbf15d07c09e9000, type: 3}
       propertyPath: AudioSource
       value: 
       objectReference: {fileID: 1993323247}
+    - target: {fileID: 7388795137834812289, guid: 08ec6bf6dfd06324dbf15d07c09e9000, type: 3}
+      propertyPath: abbassamentoErba
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388795137834812289, guid: 08ec6bf6dfd06324dbf15d07c09e9000, type: 3}
+      propertyPath: abbassamentoRoccia
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388795137834812289, guid: 08ec6bf6dfd06324dbf15d07c09e9000, type: 3}
+      propertyPath: abbassamentoSabbia
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7745646361653588364, guid: 08ec6bf6dfd06324dbf15d07c09e9000, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 1
