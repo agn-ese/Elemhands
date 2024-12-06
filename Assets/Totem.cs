@@ -20,6 +20,7 @@ public class Totem : MonoBehaviour
                     tutorialManager.rockTotem = true;
                     // Se ha il componente "Solleva"
                     other.transform.localPosition = new Vector3(21.9876f, 0.6058649f, 14.01956f);
+                    other.transform.localRotation = Quaternion.Euler(-90f, 0, 0);
                     // Riproduci il suono di feedback corretto
                     if (CorrectSrc != null)
                     {
@@ -31,6 +32,7 @@ public class Totem : MonoBehaviour
                 case "Erba":
                     tutorialManager.grassTotem = true;
                     other.transform.localPosition = new Vector3(21.96f, 0.5051451f, 19.02f);
+                    other.transform.localRotation = Quaternion.Euler(0, 0, 0);
                     // Riproduci il suono di feedback corretto
                     if (CorrectSrc != null)
                     {
@@ -43,6 +45,7 @@ public class Totem : MonoBehaviour
                 case "Sabbia":
                     tutorialManager.sandTotem = true;
                     other.transform.localPosition = new Vector3(22.03f, 0.5675723f, 9.03f);
+                    other.transform.localRotation = Quaternion.Euler(-90f, 0, 180f);
                     // Riproduci il suono di feedback corretto
                     if (CorrectSrc != null)
                     {

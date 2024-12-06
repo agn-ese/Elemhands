@@ -95,7 +95,7 @@ public class Solleva : MonoBehaviour
                 rigidbody.useGravity = false;
                 rigidbody.isKinematic = true;
 
-                GetComponent<TeleportInteractable>().AllowTeleport = false;
+                if(GetComponent<TeleportInteractable>()) GetComponent<TeleportInteractable>().AllowTeleport = false;
 
 
                 if (sound != null)
@@ -150,7 +150,7 @@ public class Solleva : MonoBehaviour
                     onFirstRelease.Invoke();
                 }
 
-                GetComponent<TeleportInteractable>().AllowTeleport = true;
+                if(GetComponent<TeleportInteractable>()) GetComponent<TeleportInteractable>().AllowTeleport = true;
                 
                 if (target && Vector3.Distance(target.position, transform.position) <= 5f)
                 {
