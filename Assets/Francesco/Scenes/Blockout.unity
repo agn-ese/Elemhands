@@ -5343,7 +5343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6545916774158445966, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6778191006967002734, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: m_IsTrigger
@@ -5399,7 +5399,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8256591403670716433, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: m_CullingMask.m_Bits
-      value: 95
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8494819785639257668, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: m_LocalPosition.x
