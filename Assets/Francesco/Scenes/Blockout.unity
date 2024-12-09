@@ -684,11 +684,6 @@ MonoBehaviour:
   OnGazeToggle:
     m_PersistentCalls:
       m_Calls: []
---- !u!4 &76831540 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8494819785639257668, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
-  m_PrefabInstance: {fileID: 517756694}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &80606429 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5568371526223589888, guid: da5d09585c357c14f93b3995725640a1, type: 3}
@@ -3023,7 +3018,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 822946c5f5daf224c8de3aa184e24dbc, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.136
+  m_Volume: 0.201
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -3813,9 +3808,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 25ed8bf23ea287843a97b978006ab55a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 009dd7f73fc7b264b8067b14c865ea97, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.824
+  m_Volume: 0.9
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4005,9 +4000,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7bc916034162a8242a88e46f1e18e717, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_audioClip: {fileID: 8300000, guid: 06d1893ba51d3a94ca371a9e507b0486, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.9
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4103,12 +4098,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9f707ba2bd58234a8b9f94ed55cb760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicaStarting: {fileID: 411674728}
   musicaDrone: {fileID: 411674727}
+  musicaStarting: {fileID: 411674728}
   musicaEnding: {fileID: 411674726}
-  mareSound: {fileID: 292637610}
-  forestaSound: {fileID: 527434346}
-  player: {fileID: 76831540}
+  suonoMare: {fileID: 292637610}
+  suonoForesta: {fileID: 527434346}
+  player: {fileID: 1429694336}
   centroIsola: {fileID: 1111019029}
   centroForesta: {fileID: 527434345}
 --- !u!4 &411674730
@@ -5607,7 +5602,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8494819785639257668, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 65.7
+      value: 33.2
       objectReference: {fileID: 0}
     - target: {fileID: 8494819785639257668, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5615,7 +5610,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8494819785639257668, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 75.3
+      value: 46.8
       objectReference: {fileID: 0}
     - target: {fileID: 8494819785639257668, guid: 97564ad74aa179c439c56c1679a0a72b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5834,7 +5829,7 @@ Transform:
   m_GameObject: {fileID: 527434344}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.241362, y: -0.3, z: 9.6}
+  m_LocalPosition: {x: 30.241362, y: 1.6, z: 9.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5854,7 +5849,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 1
   SpatializePostEffects: 0
@@ -11380,7 +11375,7 @@ Transform:
   m_GameObject: {fileID: 1111019028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.2, y: -8, z: 61.1}
+  m_LocalPosition: {x: 30.2, y: 1.6, z: 61.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

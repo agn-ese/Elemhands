@@ -1,106 +1,89 @@
 using UnityEngine;
+using System.Collections;
 
 public class MusicAmbientManager : MonoBehaviour
 {
-    public AudioSource musicaStarting; // Musica di inizio
-    public AudioSource musicaDrone; // Drone musicale sempre attivo
-    public AudioSource musicaEnding; // Musica di fine
-    public AudioSource mareSound; // Suono del mare
-    public AudioSource forestaSound; // Suono della foresta
+    public AudioSource musicaDrone; // Musica Drone sempre attiva
+    public AudioSource musicaStarting; // Musica1 (spiaggia)
+    public AudioSource musicaEnding; // Musica2 (foresta)
+    public AudioSource suonoMare; // Suono del Mare
+    public AudioSource suonoForesta; // Suono della Foresta
 
     public Transform player; // Il giocatore
-    public Transform centroIsola; // Il centro dell'isola
-    public Transform centroForesta; // Il centro della foresta
+    public Transform centroIsola; // Oggetto vuoto rappresentante il centro dell'isola
+    public Transform centroForesta; // Oggetto vuoto rappresentante il centro della foresta
 
-    private float volumeMare = 0.6f; // Volume del mare
-    private float volumeForesta = 0.7f; // Volume della foresta, più basso all'inizio
-    private float volumeMinimoMare = 0.3f; // Volume minimo del mare (quando lontano)
-    private float distanzaRiduzione = 20f; // Distanza per iniziare a ridurre il volume del mare e aumentare quello della foresta
-    private float distanzaAttivaForesta = 30f; // Distanza per cominciare a sentire la foresta
-    private float volumeMusicaStarting = 0.4f; // Volume della musica di inizio
-    private float volumeMusicaEnding = 0.4f; // Volume della musica di fine
-    private float volumeMusicaDrone = 0.3f; // Volume del drone
-
-    private bool musicaStartingFinita = false;
-    private bool musicaEndingFinita = false;
+    private AudioSource musicaAttuale = null; // Memorizza la musica in riproduzione
 
     void Start()
     {
-        musicaDrone.volume = volumeMusicaDrone; // Impostiamo il volume del drone
-        musicaDrone.Play(); // Il drone parte sempre
-        musicaStarting.volume = volumeMusicaStarting; // Impostiamo il volume della musica di inizio
-        musicaStarting.Play(); // La musica di inizio parte
-        forestaSound.volume = 0; // Inizia con il volume della foresta a 0
+        musicaDrone.loop = true;
+        musicaDrone.volume = 1.3f; // Imposta volume leggermente più alto
+        musicaDrone.Play();
+
+        StartCoroutine(GestisciMusica());
     }
 
-    void Update()
+    IEnumerator GestisciMusica()
     {
-        float distanzaCentroIsola = Vector3.Distance(player.position, centroIsola.position);
-        float distanzaCentroForesta = Vector3.Distance(player.position, centroForesta.position);
+        while (true)
+        {
+            float distanzaDaForesta = Vector3.Distance(player.position, centroForesta.position);
+            float distanzaDaIsola = Vector3.Distance(player.position, centroIsola.position);
 
-        // Gestione del volume del mare
-        if (distanzaCentroIsola < distanzaRiduzione)
-        {
-            mareSound.volume = Mathf.Lerp(mareSound.volume, volumeMinimoMare, Time.deltaTime * 2);
-        }
-        else
-        {
-            mareSound.volume = Mathf.Lerp(mareSound.volume, volumeMare, Time.deltaTime * 2);
-        }
-
-        // Gestione del volume della foresta
-        if (distanzaCentroForesta < distanzaAttivaForesta)
-        {
-            // Aumenta gradualmente il volume della foresta in base alla distanza
-            forestaSound.volume = Mathf.Lerp(forestaSound.volume, volumeForesta, Time.deltaTime * 3);
-            mareSound.volume = Mathf.Lerp(mareSound.volume, volumeMare, Time.deltaTime / 5); //Diminuisci il volume del mare
-        }
-        else
-        {
-            forestaSound.volume = Mathf.Lerp(forestaSound.volume, 0, Time.deltaTime * 2);
-        }
-
-        // Gestione della musica di inizio e della ripetizione
-        if (!musicaStarting.isPlaying && !musicaStartingFinita)
-        {
-            musicaStartingFinita = true;
-            // Dopo 20 secondi, la musica di inizio riparte se il giocatore è ancora sulla spiaggia
-            if (distanzaCentroIsola > distanzaRiduzione)
+            // Volume mare: diventa meno forte se ci si avvicina al centro dell'isola
+            if (distanzaDaIsola < 50f)
             {
-                Invoke("RipartiMusicaInizio", 20f); // Riparte la musica di inizio dopo 20 secondi
+                suonoMare.volume = 1 - distanzaDaIsola / 50f; // Riduce il volume man mano che ci si avvicina
             }
-        }
-
-        // Gestione della musica di fine
-        if (musicaStartingFinita && !musicaEnding.isPlaying && distanzaCentroForesta < distanzaAttivaForesta)
-        {
-            musicaEnding.volume = volumeMusicaEnding; // Impostiamo il volume della musica di fine
-            musicaEnding.Play();
-            musicaDrone.volume = 0.2f; // Abbassiamo ulteriormente il volume del drone mentre la musica di fine suona
-        }
-
-        // Se la musica di fine è terminata, la musica di fine riparte dopo 20 secondi
-        if (musicaEnding.isPlaying && musicaEnding.time >= musicaEnding.clip.length)
-        {
-            musicaEndingFinita = true;
-            if (musicaEndingFinita)
+            else
             {
-                Invoke("RipartiMusicaFine", 20f); // Riparte la musica di fine dopo 20 secondi
+                suonoMare.volume = 0;
             }
+
+            // Volume foresta: aumenta molto man mano che ci si avvicina al centro della foresta
+            if (distanzaDaForesta < 20f)
+            {
+                suonoForesta.volume = 1 + (20 - distanzaDaForesta) / 20f * 5f; // Aumenta il volume man mano che ci si avvicina
+            }
+            else if (distanzaDaForesta < 50f)
+            {
+                suonoForesta.volume = 1;
+            }
+            else
+            {
+                suonoForesta.volume = 0;
+            }
+
+            // Determina quale musica riprodurre in base alla posizione
+            if (distanzaDaForesta < distanzaDaIsola)
+            {
+                yield return RiproduciMusica(musicaEnding);
+            }
+            else
+            {
+                yield return RiproduciMusica(musicaStarting);
+            }
+
+            yield return new WaitForSeconds(4f);
         }
     }
 
-    void RipartiMusicaInizio()
+    IEnumerator RiproduciMusica(AudioSource nuovaMusica)
     {
-        musicaStarting.Play();
-    }
+        if (musicaAttuale != nuovaMusica)
+        {
+            if (musicaAttuale != null && musicaAttuale.isPlaying)
+            {
+                musicaAttuale.Stop();
+            }
 
-    void RipartiMusicaFine()
-    {
-        musicaEnding.Play();
+            musicaAttuale = nuovaMusica;
+        }
+
+        musicaAttuale.Play();
+        yield return new WaitForSeconds(musicaAttuale.clip.length);
+        yield return new WaitForSeconds(4f);
     }
 }
-
-
-
 
