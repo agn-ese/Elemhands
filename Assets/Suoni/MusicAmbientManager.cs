@@ -41,18 +41,28 @@ public class MusicAmbientManager : MonoBehaviour
                 suonoMare.volume = 0;
             }
 
-            // Volume foresta: aumenta molto man mano che ci si avvicina al centro della foresta
+            // Riduci ulteriormente il volume del mare quando il giocatore è vicino alla foresta
             if (distanzaDaForesta < 20f)
             {
-                suonoForesta.volume = 1 + (20 - distanzaDaForesta) / 20f * 5f; // Aumenta il volume man mano che ci si avvicina
+                suonoMare.volume = Mathf.Clamp01(1 - distanzaDaForesta / 20f) * 0.2f; // Ridurre ulteriormente il volume del mare dentro la foresta
+            }
+
+            // Volume foresta: aumenta gradualmente man mano che ci si avvicina alla foresta
+            if (distanzaDaForesta < 20f)
+            {
+                suonoForesta.volume = Mathf.Clamp01(1 - distanzaDaForesta / 20f) * 1.5f; // Aumenta il volume della foresta
             }
             else if (distanzaDaForesta < 50f)
             {
-                suonoForesta.volume = 1;
+                suonoForesta.volume = Mathf.Clamp01(1 - distanzaDaForesta / 50f);
+            }
+            else if (distanzaDaForesta < 100f) // Inizia a sentire il suono della foresta da una distanza maggiore
+            {
+                suonoForesta.volume = 0.5f; // Imposta un volume base a distanza maggiore
             }
             else
             {
-                suonoForesta.volume = 0;
+                suonoForesta.volume = 0; // Se il giocatore è lontano, nessun suono
             }
 
             // Determina quale musica riprodurre in base alla posizione
@@ -86,4 +96,6 @@ public class MusicAmbientManager : MonoBehaviour
         yield return new WaitForSeconds(4f);
     }
 }
+
+
 
